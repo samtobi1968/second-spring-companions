@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ — Second Spring Companions</title>
+    <meta name="description" content="Frequently asked questions about Second Spring Companions: our model, safety and trust, and fees and logistics." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --oxford: #1B365D;
+        --sage: #7D8C7C;
+        --cream: #F8F5EF;
+        --ink: #2A2A2A;
+        --muted: #5A5A5A;
+        --rule: #E4DFD4;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        line-height: 1.7;
+        font-size: 16px;
+      }
+      .nav { padding: 22px 24px; border-bottom: 1px solid var(--rule); background: #fff; }
+      .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+      .nav a { color: var(--oxford); text-decoration: none; font-weight: 500; font-size: 14px; }
+      .brand { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; color: var(--oxford); }
+
+      .wrap { max-width: 860px; margin: 0 auto; padding: 72px 24px 96px; }
+
+      .eyebrow { color: var(--sage); font-size: 12px; text-transform: uppercase; letter-spacing: 0.22em; font-weight: 600; margin-bottom: 18px; }
+      h1 {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        color: var(--oxford);
+        font-size: 52px;
+        font-weight: 500;
+        margin: 0 0 16px;
+        letter-spacing: -0.01em;
+        line-height: 1.05;
+      }
+      .lede { color: var(--muted); font-size: 18px; max-width: 620px; margin: 0 0 56px; }
+
+      .group { margin-bottom: 56px; }
+      .group-title {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        color: var(--oxford);
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0 0 8px;
+        letter-spacing: -0.005em;
+      }
+      .group-rule { height: 1px; width: 48px; background: var(--sage); margin: 0 0 24px; }
+
+      details {
+        border-bottom: 1px solid var(--rule);
+        padding: 4px 0;
+      }
+      details:first-of-type { border-top: 1px solid var(--rule); }
+      summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 22px 48px 22px 0;
+        position: relative;
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--oxford);
+        line-height: 1.35;
+        letter-spacing: -0.005em;
+        transition: color 0.2s ease;
+      }
+      summary::-webkit-details-marker { display: none; }
+      summary:hover { color: var(--sage); }
+      summary::after {
+        content: "+";
+        position: absolute;
+        right: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--sage);
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 1;
+        transition: transform 0.3s ease;
+      }
+      details[open] > summary::after {
+        content: "+";
+        transform: translateY(-50%) rotate(45deg);
+      }
+      .answer {
+        padding: 0 48px 24px 0;
+        color: var(--muted);
+        font-size: 16px;
+        animation: slide 0.35s ease both;
+      }
+      .answer p { margin: 0 0 12px; }
+      .answer p:last-child { margin-bottom: 0; }
+      @keyframes slide {
+        from { opacity: 0; transform: translateY(-6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .cta {
+        margin-top: 72px;
+        padding: 48px 40px;
+        background: #fff;
+        border: 1px solid var(--rule);
+        border-left: 3px solid var(--sage);
+        text-align: center;
+      }
+      .cta h3 {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        color: var(--oxford);
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 12px;
+      }
+      .cta p { color: var(--muted); margin: 0 0 20px; }
+      .cta a.btn {
+        display: inline-block;
+        background: var(--oxford);
+        color: var(--cream);
+        text-decoration: none;
+        padding: 14px 28px;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: background 0.2s ease;
+      }
+      .cta a.btn:hover { background: #14294a; }
+
+      a.back { display: inline-block; margin-top: 40px; color: var(--oxford); font-size: 14px; text-decoration: none; }
+      a.back:hover { text-decoration: underline; }
+
+      @media (max-width: 640px) {
+        h1 { font-size: 40px; }
+        .group-title { font-size: 26px; }
+        summary { font-size: 19px; padding-right: 40px; }
+        .cta { padding: 36px 24px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="/" class="brand">Second Spring</a>
+        <a href="/">← Back to site</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="eyebrow">Frequently Asked Questions</div>
+      <h1>Answers, thoughtfully considered.</h1>
+      <p class="lede">Everything you might want to know about how Second Spring works, who our Springers are, and what to expect from a companionship.</p>
+
+      <!-- THE MODEL -->
+      <section class="group">
+        <h2 class="group-title">The Model</h2>
+        <div class="group-rule"></div>
+
+        <details>
+          <summary>What exactly is a Springer?</summary>
+          <div class="answer">
+            <p>A Springer is a warm, vetted companion matched with an older adult for friendship, conversation, and shared interests. Springers are not nurses, carers, or clinicians — they are thoughtful people who bring presence, curiosity, and consistency.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How does the matching process work?</summary>
+          <div class="answer">
+            <p>It begins with a free consultation to understand interests, routines, and what a good Springer looks like for you. We then introduce a Springer whose personality and interests align with your loved one, followed by a relaxed meet-and-greet before regular visits begin at a pace that suits them.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What do Springers actually do during visits?</summary>
+          <div class="answer">
+            <p>Visits are shaped by the individual — conversation over tea, a walk in the park, a museum trip, reading aloud, gardening, music, or simply quiet company. The aim is genuine connection, not a checklist.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Do you provide personal care or medical support?</summary>
+          <div class="answer">
+            <p>No. Second Spring is a companionship registry only. We do not provide nursing, personal care, medication management, or any clinical assessments. Families requiring care should engage a regulated provider alongside us.</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- SAFETY & TRUST -->
+      <section class="group">
+        <h2 class="group-title">Safety & Trust</h2>
+        <div class="group-rule"></div>
+
+        <details>
+          <summary>How are Springers vetted?</summary>
+          <div class="answer">
+            <p>Every Springer holds an Enhanced DBS check, provides verified references, and completes an in-person interview with our Registrar. We accept a small fraction of applicants — character, warmth, and reliability matter as much as background.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Are Springers insured?</summary>
+          <div class="answer">
+            <p>Yes. Second Spring carries public liability and professional indemnity insurance covering all introductions made through our registry.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What if the match isn't quite right?</summary>
+          <div class="answer">
+            <p>It happens, and it's perfectly fine. Tell us and we'll re-match thoughtfully — at no additional cost. The relationship is everything; we'd rather take the time to get it right.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How do you protect privacy?</summary>
+          <div class="answer">
+            <p>We are ICO registered and fully GDPR compliant. Personal information is shared only with the matched Springer and only to the extent needed to support the companionship.</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- FEES & LOGISTICS -->
+      <section class="group">
+        <h2 class="group-title">Fees & Logistics</h2>
+        <div class="group-rule"></div>
+
+        <details>
+          <summary>How much does it cost?</summary>
+          <div class="answer">
+            <p>Companionship visits are £28 per hour. The initial consultation, matching, and meet-and-greet are complimentary — you only pay once regular visits begin.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How are visits scheduled and paid for?</summary>
+          <div class="answer">
+            <p>Visits are scheduled directly between the family and the Springer at a cadence that suits everyone. We invoice monthly in arrears by bank transfer or card.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What if I need to cancel a visit?</summary>
+          <div class="answer">
+            <p>Cancellations made with at least 24 hours' notice are free of charge. Inside 24 hours, the visit fee is payable in full to respect the Springer's time.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Where do you operate?</summary>
+          <div class="answer">
+            <p>We serve families across the United Kingdom. Coverage is densest in and around major cities; tell us where you are and we'll let you know honestly whether we can match well in your area.</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h3>Have a specific question?</h3>
+        <p>Our Registrar is happy to talk through anything not covered here.</p>
+        <a class="btn" href="mailto:info@secondspringcompanions.co.uk?subject=FAQ%20Enquiry">Email our Registrar</a>
+      </div>
+
+      <a class="back" href="/">← Back to home</a>
+    </main>
+  </body>
+</html>
