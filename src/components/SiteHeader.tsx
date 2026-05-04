@@ -1,4 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -24,7 +27,7 @@ const nav: NavItem[] = [
 const SiteHeader = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { pathname } = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -43,7 +46,7 @@ const SiteHeader = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="flex flex-col leading-none">
+        <Link href="/" className="flex flex-col leading-none">
           <span className={`font-serif text-xl md:text-2xl ${transparent ? "text-cream" : "text-foreground"}`}>
             Second Spring
           </span>
@@ -57,7 +60,7 @@ const SiteHeader = () => {
             n.children ? (
               <div key={n.label} className="relative group">
                 <Link
-                  to={n.to}
+                  href={n.to}
                   className={`flex items-center gap-1 text-sm font-medium tracking-wide transition-colors ${
                     transparent ? "text-cream/90 hover:text-cream" : "text-foreground/70 hover:text-foreground"
                   }`}
@@ -70,7 +73,7 @@ const SiteHeader = () => {
                     {n.children.map((c) => (
                       <Link
                         key={c.to}
-                        to={c.to}
+                        href={c.to}
                         className="block px-5 py-3 text-sm text-primary hover:bg-sage-soft transition-colors font-serif"
                       >
                         {c.label}
@@ -82,7 +85,7 @@ const SiteHeader = () => {
             ) : (
               <Link
                 key={n.to}
-                to={n.to}
+                href={n.to}
                 className={`text-sm font-medium tracking-wide transition-colors ${
                   transparent ? "text-cream/90 hover:text-cream" : "text-foreground/70 hover:text-foreground"
                 }`}
@@ -115,7 +118,7 @@ const SiteHeader = () => {
               n.children ? (
                 <div key={n.label} className="py-2 border-b border-border/60">
                   <Link
-                    to={n.to}
+                    href={n.to}
                     onClick={() => setOpen(false)}
                     className="text-foreground font-medium mb-2 block"
                   >
@@ -125,7 +128,7 @@ const SiteHeader = () => {
                     {n.children.map((c) => (
                       <Link
                         key={c.to}
-                        to={c.to}
+                        href={c.to}
                         onClick={() => setOpen(false)}
                         className="text-foreground/70 hover:text-foreground text-sm py-1"
                       >
@@ -137,7 +140,7 @@ const SiteHeader = () => {
               ) : (
                 <Link
                   key={n.to}
-                  to={n.to}
+                  href={n.to}
                   onClick={() => setOpen(false)}
                   className="text-foreground/80 hover:text-foreground py-2 border-b border-border/60"
                 >

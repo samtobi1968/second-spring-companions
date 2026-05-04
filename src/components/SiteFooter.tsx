@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const SiteFooter = () => (
   <footer className="bg-primary text-primary-foreground">
@@ -14,12 +14,12 @@ const SiteFooter = () => (
       <div>
         <div className="eyebrow text-cream/50 mb-4">Explore</div>
         <ul className="space-y-3 text-sm">
-          <li><Link className="text-cream/80 hover:text-cream" to="/services">Our Services</Link></li>
-          <li><Link className="text-cream/80 hover:text-cream" to="/our-springers">Our Springers</Link></li>
-          <li><Link className="text-cream/80 hover:text-cream" to="/why-companionship">Why Companionship?</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/services">Our Services</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/our-springers">Our Springers</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/why-companionship">Why Companionship?</Link></li>
           <li><a className="text-cream/80 hover:text-cream" href="/#standard">The Standard</a></li>
-          <li><Link className="text-cream/80 hover:text-cream" to="/faq">FAQ</Link></li>
-          <li><Link className="text-cream/80 hover:text-cream" to="/become-a-springer">Become a Springer</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/faq">FAQ</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/become-a-springer">Become a Springer</Link></li>
         </ul>
       </div>
 
