@@ -88,16 +88,17 @@ const Index = () => {
       <section id="about" className="py-28 md:py-36">
         <div className="container max-w-4xl">
           <Eyebrow>Who We Are</Eyebrow>
-          <h2 className="font-serif text-4xl md:text-6xl leading-[1.05] mb-10">
-            A boutique agency for renewal in later life.
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.06] tracking-tight text-balance max-w-4xl mb-12 md:mb-16">
+            An agency for curated companionship in later life
           </h2>
-          <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-            Second Spring Companions is a boutique introductory agency that matches our dedicated 'Springers', 
-            self-employed companions with older adults seeking more than just basic support. 
-            We believe in renewal at every stage of life, providing intellectual and social 
-            stimulation tailored to each individual. Whether it's a shared hobby, a fresh meal, 
-            or light help around the home, a Springer is a carefully vetted friend chosen to 
-            bring a genuine spring back into your loved one's step.
+          <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-3xl">
+            Second Spring Companions is a boutique introductory agency that matches older adults with{" "}
+            <span className="font-semibold text-sage-deep">Springers</span>, dedicated, self-employed companions who
+            provide more than just a check-in. We believe in renewal at every stage of life. By matching individuals
+            based on personality and interests, we provide the intellectual spark and social energy that traditional care
+            misses. Whether it&apos;s mastering a new hobby, sharing a home-cooked meal, or a long walk, a{" "}
+            <span className="font-semibold text-sage-deep">Springer</span> is a carefully hand-picked catalyst for
+            bringing a genuine spring back into your loved one&apos;s step.
           </p>
         </div>
       </section>
