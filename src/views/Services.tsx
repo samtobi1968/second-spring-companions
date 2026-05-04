@@ -185,7 +185,7 @@ const Services = () => {
               <ul className="space-y-2.5 text-sm text-foreground/70 leading-relaxed">
                 {[
                   "Administering medication",
-                  "Bathing, dressing, or personal care",
+                  "Bathing dressing or personal care",
                   "Wound care or dressing changes",
                   "Manual handling or mobility assistance",
                   "Clinical decisions of any kind",
