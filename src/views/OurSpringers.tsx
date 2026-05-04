@@ -26,7 +26,7 @@ const OurSpringers = () => (
         </div>
         <div className="lg:col-span-5">
           <img
-            src={portrait}
+            src={portrait.src}
             alt="A thoughtful Springer companion"
             className="w-full aspect-[4/5] object-cover shadow-elegant"
           />

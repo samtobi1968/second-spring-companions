@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -88,7 +90,7 @@ const BecomeASpringer = () => {
           </div>
           <div className="lg:col-span-5">
             <img
-              src={portrait}
+              src={portrait.src}
               alt="A warm, friendly Springer companion"
               width={1200}
               height={1400}
@@ -324,7 +326,7 @@ const BecomeASpringer = () => {
                 Your application has been received. One of our founders will review it personally and be in touch within five working days.
               </p>
               <Button asChild variant="luxe">
-                <Link to="/">Return Home <ArrowRight size={16} /></Link>
+                <Link href="/">Return Home <ArrowRight size={16} /></Link>
               </Button>
             </div>
           ) : (

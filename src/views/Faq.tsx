@@ -1,5 +1,6 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { ArrowRight, Plus } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -38,7 +39,7 @@ const faqCategories = [
       },
       {
         q: "Are you regulated by the CQC?",
-        a: "The Care Quality Commission (CQC) regulates certain types of health and social care in England. Second Spring Companions is an introductory agency: we introduce families to self-employed Springers for companionship and lifestyle support. We do not provide CQC-regulated personal care, and Springers are not our employees. Nothing on this site should be read as a claim of CQC registration where it does not apply.",
+        a: "Second Spring Companions is an introductory agency. We introduce families to self-employed Springers for companionship and lifestyle support. We do not provide CQC-regulated personal care.",
       },
       {
         q: "Where do you operate?",
@@ -66,19 +67,6 @@ const faqCategories = [
 ] as const;
 
 const Faq = () => {
-  useEffect(() => {
-    document.title = "FAQ | London-Based, UK-Wide Bespoke Search";
-    const description =
-      "Frequently asked questions about our London-based companionship service and UK-wide bespoke search matching.";
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", description);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -136,11 +124,11 @@ const Faq = () => {
               Have a specific question?
             </h2>
             <p className="text-foreground/75 leading-relaxed max-w-xl mx-auto mb-8">
-              Tell us about your loved one through our Kindred Spirit discovery — we read every
+              Tell us about your loved one through our Kindred Spirit discovery, we read every
               submission and reply personally.
             </p>
             <Button asChild size="lg" variant="luxe">
-              <Link to="/#kindred-spirit">
+              <Link href="/#kindred-spirit">
                 Start your personality match <ArrowRight size={16} />
               </Link>
             </Button>

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -18,19 +17,6 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Index = () => {
-  useEffect(() => {
-    document.title = "Second Spring Companions | London-Based, UK-Wide Bespoke Matching";
-    const description =
-      "Second Spring Companions is based in London, providing bespoke matching for families across the UK.";
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", description);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -38,7 +24,7 @@ const Index = () => {
       {/* HERO */}
       <section className="relative min-h-[100svh] flex items-end overflow-hidden">
         <img
-          src={heroImg}
+          src={heroImg.src}
           alt="An older woman laughing warmly with her Springer companion at home"
           width={1600}
           height={1200}
@@ -66,7 +52,7 @@ const Index = () => {
                 <a href="#kindred-spirit">Start Your Personality Match</a>
               </Button>
               <Button asChild size="xl" variant="ghostLuxe" className="text-cream border-cream/40 hover:bg-cream/10">
-                <Link to="/services">Explore Our Services</Link>
+                <Link href="/services">Explore Our Services</Link>
               </Button>
             </div>
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-cream/70">
@@ -176,7 +162,7 @@ const Index = () => {
             {pillars.map((p) => (
               <Link
                 key={p.number}
-                to={`/services#pillars`}
+                href={`/services#pillars`}
                 className="group bg-background p-8 hover:bg-cream transition-colors duration-300 flex flex-col"
               >
                 <div className="flex items-center justify-between mb-6">
@@ -195,7 +181,7 @@ const Index = () => {
 
           <div className="mt-14 text-center">
             <Button asChild size="xl" variant="luxe">
-              <Link to="/services">View All Services <ArrowRight size={16} /></Link>
+              <Link href="/services">View All Services <ArrowRight size={16} /></Link>
             </Button>
           </div>
         </div>
