@@ -13,6 +13,7 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
   <div className="flex items-center gap-3 mb-5">
     <div className="rule" />
     <span className="eyebrow text-foreground/60">{children}</span>
+    
   </div>
 );
 
