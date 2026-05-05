@@ -45,6 +45,18 @@ const faqCategories = [
         q: "Where do you operate?",
         a: "We have deep roots in the London community and coordinate introductions from our London base. We are also proud to offer a bespoke UK-wide search for families who want the same careful matching outside the capital — timelines and logistics are discussed openly at enquiry.",
       },
+      {
+        q: "Are your Springers insured?",
+        a: "Yes. Every Springer operating through Second Spring Companions holds public liability insurance before any visits begin. This sits alongside their enhanced DBS check and verified references as part of our standard vetting process.",
+      },
+      {
+        q: "What happens if the match does not feel right?",
+        a: "We would rather know early than have your loved one feel uncomfortable. If the first introduction does not feel like a natural fit, we go back to the matching process and find someone who does. There is no additional placement fee for a rematch in the first 30 days.",
+      },
+      {
+        q: "Can Springers support someone living with dementia or memory difficulties?",
+        a: "We do not provide clinical or personal care, but we have experience matching Springers who are calm, patient and comfortable in the company of people with early to moderate memory conditions. We discuss this openly at the enquiry stage so we can find the right person for your loved one's specific situation.",
+      },
     ],
   },
   {
@@ -61,6 +73,31 @@ const faqCategories = [
       {
         q: "What happens after we enquire?",
         a: "We read every Kindred Spirit submission personally, then reach out at the time you prefer for a thoughtful conversation. If we believe we can help, we outline next steps, timing, and fees before any introduction is made.",
+      },
+      {
+        q: "How quickly can a Springer start?",
+        a: "For standard placements, we typically complete matching and introductions within one to two weeks of your initial conversation with us. If your situation is urgent — for example following a hospital discharge or sudden change in circumstances — contact us directly and we will do everything we can to move faster.",
+      },
+      {
+        q: "What does the introductory fee cover?",
+        a: "The placement fee covers your loved one's personality assessment, our search and vetting of suitable Springers, the matching process, coordination of the introductory video call, and our ongoing support throughout the relationship. Springer visit rates are agreed separately and paid directly to your Springer.",
+      },
+    ],
+  },
+  {
+    title: "The Homecoming Service",
+    items: [
+      {
+        q: "What is the Homecoming Service?",
+        a: "The Homecoming Service is a dedicated offering for the days surrounding a hospital discharge. A Springer prepares the home before your loved one arrives back, accompanies them from the ward to their front door, and visits daily in the first week to provide meals, company, errands and family updates. It is designed to fill the practical and emotional gap that the NHS cannot.",
+      },
+      {
+        q: "Does the Homecoming Service include medical or personal care?",
+        a: "No. Springers provide companionship, practical support and lifestyle assistance only. They do not administer medication, assist with bathing or dressing, or provide any CQC-regulated care. If clinical support is also needed, we are happy to signpost you to appropriate regulated providers — many families use both in parallel.",
+      },
+      {
+        q: "Can the Homecoming Service be arranged at short notice?",
+        a: "Yes, in many cases. Hospital discharges are often sudden and we understand families do not always have time to plan ahead. Contact us directly for urgent Homecoming requests and we will prioritise your enquiry.",
       },
     ],
   },
