@@ -17,7 +17,7 @@ const OurSpringers = () => (
             <span className="eyebrow text-foreground/60">Our Springers</span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] tracking-tight">
-            Meet our <span className="italic text-sage-deep">Springers.</span>
+            The people behind the <span className="italic text-sage-deep">visits.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-foreground/75 max-w-2xl leading-relaxed">
             Carefully chosen companions — selected for warmth, intellect and the rare gift of
@@ -44,12 +44,42 @@ const OurSpringers = () => (
         <h2 className="font-serif text-4xl md:text-6xl leading-[1.05] mb-10">
           What is a Springer?
         </h2>
-        <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-          Our Springers are companions who embody our philosophy that life in later years should
-          be a season of renewal. Coming from a range of backgrounds — from students to
-          professionals — they bring something unique you can relate to and learn from, ensuring
-          you feel revitalised.
-        </p>
+        <div className="space-y-6 text-lg md:text-xl text-foreground/80 leading-relaxed">
+          <p>
+            A Springer is not a carer, a cleaner or a visitor. They are a presence — chosen
+            specifically because something about them will resonate with your loved one. We look for
+            people with intellectual curiosity, warmth, patience and the rare ability to make an hour
+            feel like ten minutes.
+          </p>
+          <p>
+            Our Springers come from a range of backgrounds — educators, creative professionals,
+            people with decades of life experience who want to give something back. What unites them
+            is not their CV but their character.
+          </p>
+          <p>
+            Every Springer is introduced to you before any visit begins. If the connection does not
+            feel right, we go back to the registry and find someone who does. No pressure, no
+            obligation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* PLACEHOLDER PROFILE */}
+    <section className="py-20 bg-cream-deep">
+      <div className="container">
+        <div className="flex items-center justify-center gap-3 mb-10">
+          <div className="rule" />
+          <span className="eyebrow text-foreground/60">A Springer, in their own words</span>
+          <div className="rule" />
+        </div>
+        <div className="max-w-2xl mx-auto bg-card border border-border p-10 shadow-soft">
+          <p className="font-serif italic text-xl text-foreground/80 leading-relaxed">
+            I have always been drawn to people with stories to tell. My clients have lived through
+            things I can only read about. Every visit teaches me something.
+          </p>
+          <p className="text-sm text-foreground/50 mt-6">— Springer, South London registry</p>
+        </div>
       </div>
     </section>
 
@@ -71,11 +101,16 @@ const OurSpringers = () => (
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-px bg-cream/10 border border-cream/15">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-cream/10 border border-cream/15">
           {[
             { icon: MessagesSquare, t: "Conversational Selection", c: "We interview every applicant in person to assess warmth, intellect, and the ease with which they hold a meaningful conversation." },
             { icon: ShieldCheck, t: "Enhanced DBS Check", c: "Every Springer holds a current enhanced DBS certificate and provides two professional references which we verify directly." },
             { icon: UserCheck, t: "Founder Interview", c: "No Springer joins our registry without meeting our founders face-to-face. We make every selection personally." },
+            {
+              icon: ShieldCheck,
+              t: "Public Liability Insurance",
+              c: "Every Springer operating through Second Spring holds public liability insurance before their first visit begins. Your family's peace of mind is built into our process, not an afterthought.",
+            },
           ].map((b) => (
             <div key={b.t} className="bg-primary p-10">
               <b.icon className="text-sage-soft mb-6" size={28} />
@@ -83,6 +118,27 @@ const OurSpringers = () => (
               <p className="text-cream/70 text-sm leading-relaxed">{b.c}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 max-w-3xl mx-auto text-center">
+          <span className="eyebrow text-cream/60">What we select for</span>
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
+            {[
+              "Intellectual curiosity",
+              "Warmth and patience",
+              "Conversational depth",
+              "Emotional intelligence",
+              "Reliability",
+              "Genuine interest in older adults",
+            ].map((label) => (
+              <span
+                key={label}
+                className="rounded-full border border-cream/30 px-5 py-2 text-sm text-cream/80"
+              >
+                {label}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
