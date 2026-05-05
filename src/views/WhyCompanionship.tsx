@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
@@ -41,23 +42,58 @@ const WhyCompanionship = () => (
             <span className="eyebrow text-foreground/60">The Evidence</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl leading-[1.1]">
-            Loneliness is a public health issue. Companionship is the answer.
+            Loneliness is a public health issue. Companionship is a proven response.
           </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
           {[
-            { stat: "26%", src: "The Lancet", title: "Increased risk of dementia linked to chronic social isolation in adults over 65.", copy: "A peer-reviewed meta-analysis of 11,000 participants found social isolation is among the most significant modifiable risk factors for cognitive decline." },
-            { stat: "1.4M", src: "Age UK, 2024", title: "Older adults in England are chronically lonely — a figure rising year on year.", copy: "Of those, Age UK estimates over 200,000 go a full week without speaking to anyone." },
-            { stat: "£3", src: "Social Finance UK", title: "Saved in NHS and social care costs for every £1 invested in social connection.", copy: "Structured companionship reduces GP visits, A&E admissions and care home transitions." },
+            {
+              stat: "26%",
+              src: "The Lancet",
+              href: "https://www.thelancet.com",
+              title: "Increased risk of dementia linked to chronic social isolation in adults over 65.",
+              copy: "A peer-reviewed meta-analysis of 11,000 participants found social isolation is among the most significant modifiable risk factors for cognitive decline.",
+            },
+            {
+              stat: "1.4M",
+              src: "Age UK, 2024",
+              href: "https://www.ageuk.org.uk",
+              title: "Older adults in England are chronically lonely — a figure rising year on year.",
+              copy: "Of those, Age UK estimates over 200,000 go a full week without speaking to anyone.",
+            },
+            {
+              stat: "£3",
+              src: "Social Finance UK",
+              href: "https://www.socialfinance.org.uk",
+              title: "Saved in NHS and social care costs for every £1 invested in social connection.",
+              copy: "Structured companionship reduces GP visits, A&E admissions and care home transitions.",
+            },
           ].map((e) => (
             <div key={e.src} className="bg-background p-10">
               <div className="font-serif text-6xl text-sage-deep mb-2">{e.stat}</div>
-              <div className="eyebrow text-foreground/50 mb-6">{e.src}</div>
+              <a
+                href={e.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="eyebrow text-foreground/50 hover:text-foreground underline-offset-4 hover:underline text-xs mb-6 inline-block"
+              >
+                {e.src}
+              </a>
               <h3 className="font-serif text-xl mb-4 leading-snug">{e.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{e.copy}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="py-16 bg-background">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="font-serif italic text-2xl md:text-3xl text-foreground/80 leading-relaxed">
+            Behind every statistic is a family like yours. A parent who stopped calling as much. A
+            person who used to fill a room. Companionship does not fix everything — but it gives
+            something back that quietly matters more than almost anything else.
+          </p>
         </div>
       </div>
     </section>
@@ -91,6 +127,17 @@ const WhyCompanionship = () => (
             );
           })}
         </div>
+
+        <p className="mt-12 text-sm text-foreground/60 leading-relaxed max-w-2xl mx-auto text-center">
+          The need for companionship is often greatest in the days immediately following a hospital
+          stay. Our Homecoming Service was designed specifically for this moment.{" "}
+          <Link
+            href="/services#homecoming"
+            className="text-sage-deep underline-offset-4 underline font-medium"
+          >
+            Learn about the Homecoming Service →
+          </Link>
+        </p>
       </div>
     </section>
 
