@@ -17,9 +17,8 @@ const nav: NavItem[] = [
       { to: "/services#homecoming", label: "The Homecoming Service" },
     ],
   },
-  { to: "/", label: "Home" },
-  { to: "/our-springers", label: "Our Springers" },
   { to: "/why-companionship", label: "Why Companionship?" },
+  { to: "/our-springers", label: "Our Springers" },
   { to: "/faq", label: "FAQ" },
   { to: "/become-a-springer", label: "Become a Springer" },
 ];
@@ -38,6 +37,15 @@ const SiteHeader = () => {
 
   const onHome = pathname === "/";
   const transparent = onHome && !scrolled && !open;
+
+  const isBecomeSpringerPage = pathname === "/become-a-springer";
+
+  const desktopInactive = transparent ? "text-cream/90 hover:text-cream" : "text-foreground/70 hover:text-foreground";
+  const desktopActive = transparent ? "text-cream font-semibold" : "text-foreground font-semibold";
+  const servicesActive = pathname.startsWith("/services");
+
+  const mobileInactive = "text-foreground/80 hover:text-foreground";
+  const mobileActive = "text-foreground font-semibold";
 
   return (
     <header
@@ -62,7 +70,7 @@ const SiteHeader = () => {
                 <Link
                   href={n.to}
                   className={`flex items-center gap-1 text-sm font-medium tracking-wide transition-colors ${
-                    transparent ? "text-cream/90 hover:text-cream" : "text-foreground/70 hover:text-foreground"
+                    servicesActive ? desktopActive : desktopInactive
                   }`}
                 >
                   {n.label}
@@ -82,12 +90,26 @@ const SiteHeader = () => {
                   </div>
                 </div>
               </div>
+            ) : n.to === "/become-a-springer" ? (
+              <Link
+                key={n.to}
+                href={n.to}
+                className={`inline-flex items-center rounded-full border px-4 py-1 text-sm font-medium tracking-wide transition-colors ${
+                  transparent
+                    ? `border-cream/30 ${isBecomeSpringerPage ? "text-cream font-semibold" : "text-cream/90 hover:text-cream"}`
+                    : `border-foreground/20 ${
+                        isBecomeSpringerPage ? "text-foreground font-semibold" : "text-foreground/70 hover:text-foreground"
+                      }`
+                }`}
+              >
+                {n.label}
+              </Link>
             ) : (
               <Link
                 key={n.to}
                 href={n.to}
                 className={`text-sm font-medium tracking-wide transition-colors ${
-                  transparent ? "text-cream/90 hover:text-cream" : "text-foreground/70 hover:text-foreground"
+                  pathname === n.to ? desktopActive : desktopInactive
                 }`}
               >
                 {n.label}
@@ -120,7 +142,9 @@ const SiteHeader = () => {
                   <Link
                     href={n.to}
                     onClick={() => setOpen(false)}
-                    className="text-foreground font-medium mb-2 block"
+                    className={`mb-2 block text-sm font-medium ${
+                      servicesActive ? mobileActive : mobileInactive
+                    }`}
                   >
                     {n.label}
                   </Link>
@@ -142,7 +166,9 @@ const SiteHeader = () => {
                   key={n.to}
                   href={n.to}
                   onClick={() => setOpen(false)}
-                  className="text-foreground/80 hover:text-foreground py-2 border-b border-border/60"
+                  className={`py-2 border-b border-border/60 text-sm font-medium ${
+                    pathname === n.to ? mobileActive : mobileInactive
+                  }`}
                 >
                   {n.label}
                 </Link>

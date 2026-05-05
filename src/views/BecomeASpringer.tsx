@@ -138,7 +138,7 @@ const BecomeASpringer = () => {
               { icon: Clock, t: "Flexible Hours", c: "You choose when you work. Set your own schedule around your life." },
               { icon: Briefcase, t: "Self-Employed Freedom", c: "You're your own boss. We provide the clients, you provide the warmth." },
               { icon: Heart, t: "Meaningful Work", c: "The impact you make is real. Our clients genuinely look forward to your visits." },
-              { icon: Users, t: "Be Part of Something", c: "Join a supportive network of companions who share your values." },
+              { icon: Users, t: "Be Part of Something", c: "Regular check-ins with our founders, a supportive companion community, and someone always available if something feels off." },
             ].map((b) => (
               <div key={b.t} className="bg-background p-10">
                 <b.icon className="text-sage-deep mb-6" size={28} />
@@ -195,6 +195,7 @@ const BecomeASpringer = () => {
             <ul className="space-y-5">
               {[
                 "Springers are self-employed independent contractors.",
+                "Springer rates are competitive and discussed at your introductory call. We are transparent about pay from the very first conversation.",
                 "You invoice us for the hours you complete.",
                 "Suggested starting commitment: 2–5 hours per week (flexible to grow).",
                 "You set your availability — mornings, afternoons, weekends. We always share the client's preferred timings, and if you accept, it's up to you.",
@@ -287,6 +288,22 @@ const BecomeASpringer = () => {
                 q: "What if I need to cancel a visit?",
                 a: "We ask for as much notice as possible. Get in touch with us straight away and we'll help arrange cover or reschedule with the client.",
               },
+              {
+                q: "Do I need my own DBS check?",
+                a: "If you already hold a valid enhanced DBS certificate, great. If not, we will guide you through obtaining one before your first visit. We do not arrange DBS checks on your behalf but we will point you in the right direction.",
+              },
+              {
+                q: "Can I do this alongside another job or my studies?",
+                a: "Absolutely. Many of our Springers fit visits around full-time work, part-time roles or university. The flexibility is genuine — you set your availability and we work around it.",
+              },
+              {
+                q: "How quickly could I start?",
+                a: "Once your vetting is complete and we have found a suitable client match, most Springers are visiting within two to four weeks of their initial chat with us.",
+              },
+              {
+                q: "What insurance do I need?",
+                a: "As a self-employed Springer you are responsible for your own public liability insurance before visits begin. This is standard for self-employed companion roles and relatively low cost. We can point you toward suitable providers at onboarding.",
+              },
             ].map((item, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-border last:border-0">
                 <AccordionTrigger className="font-serif text-lg md:text-xl text-left py-6 hover:no-underline">
@@ -313,6 +330,9 @@ const BecomeASpringer = () => {
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.05]">Begin your application.</h2>
             <p className="mt-5 text-muted-foreground max-w-xl mx-auto">
               Tell us about yourself. We read every word. Successful applicants hear from us within five working days.
+            </p>
+            <p className="text-sm text-muted-foreground max-w-xl mx-auto mt-3">
+              After we review your application we will invite you for a short informal video call — usually 20 to 30 minutes. If we think you are a great fit, we will begin matching you with a client straight away.
             </p>
           </div>
 
@@ -354,25 +374,43 @@ const BecomeASpringer = () => {
                   <input required type="tel" name="mobile" maxLength={20} className="luxe-input" />
                 </Field>
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <Field label="Postcode">
-                  <input required name="postcode" maxLength={10} className="luxe-input" />
-                </Field>
-                <Field label="Availability">
-                  <select required name="availability" className="luxe-input" defaultValue="">
-                    <option value="" disabled>Select…</option>
-                    <option value="Weekdays">Weekdays</option>
-                    <option value="Weekends">Weekends</option>
-                    <option value="Overnight">Overnight</option>
-                  </select>
-                </Field>
-              </div>
-              <Field label="Are you patient, emotionally intuitive and a good listener?">
-                <select required name="good_listener" className="luxe-input" defaultValue="">
-                  <option value="" disabled>Select…</option>
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
+              <Field label="Postcode">
+                <input required name="postcode" maxLength={10} className="luxe-input" />
+              </Field>
+              <fieldset className="border-0 p-0 m-0 min-w-0">
+                <legend className="eyebrow text-foreground/55 block mb-2">
+                  Availability (select all that apply)
+                </legend>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+                  {[
+                    { name: "availability_weekday_mornings", label: "Weekday mornings" },
+                    { name: "availability_weekday_afternoons", label: "Weekday afternoons" },
+                    { name: "availability_weekends", label: "Weekends" },
+                    { name: "availability_flexible", label: "Flexible / open to discuss" },
+                  ].map((opt) => (
+                    <div key={opt.name} className="flex items-start gap-3">
+                      <input
+                        id={opt.name}
+                        type="checkbox"
+                        name={opt.name}
+                        value="yes"
+                        className="mt-1.5"
+                      />
+                      <label htmlFor={opt.name} className="text-sm text-foreground/80 leading-relaxed">
+                        {opt.label}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+              </fieldset>
+              <Field label="Tell us briefly why you're drawn to working with older adults.">
+                <textarea
+                  required
+                  name="why_apply"
+                  rows={4}
+                  maxLength={600}
+                  className="luxe-input"
+                />
               </Field>
               <Field label="Do you have an enhanced DBS certificate?">
                 <select required name="dbs_certificate" className="luxe-input" defaultValue="">
@@ -418,6 +456,10 @@ const BecomeASpringer = () => {
           transition: border-color 0.3s;
         }
         .luxe-input:focus { border-color: hsl(var(--foreground)); }
+        textarea.luxe-input {
+          min-height: 6rem;
+          resize: vertical;
+        }
       `}</style>
     </div>
   );
