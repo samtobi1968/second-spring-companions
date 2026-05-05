@@ -6,6 +6,7 @@ const features = [
   "Enhanced DBS vetting",
   "Bespoke personality matching",
   "Consistent connection (no rotating staff)",
+  "No rotations. Your Springer, every time",
 ];
 
 const PricingCard = () => (
@@ -30,6 +31,10 @@ const PricingCard = () => (
     <Button asChild variant="luxe" size="lg" className="w-full sm:w-auto">
       <a href="/#kindred-spirit">Start Your Personality Match</a>
     </Button>
+    <p className="text-sm text-foreground/50 text-center mt-6">
+      We believe genuine connection cannot be rushed. Our two-hour minimum ensures every visit is
+      relaxed, meaningful, and entirely tailored to you.
+    </p>
   </div>
 );
 

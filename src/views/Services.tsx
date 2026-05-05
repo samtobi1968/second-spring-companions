@@ -48,6 +48,19 @@ const Services = () => {
                     <p key={idx}>{para}</p>
                   ))}
                 </div>
+                <p className="mt-6 text-sm text-foreground/50">
+                  Uniquely unhurried visits from £28 / hr · 2-hour minimum
+                </p>
+                <ul className="mt-6 space-y-2.5 text-sm text-foreground/75">
+                  {p.featureBullets.map((line) => (
+                    <li key={line} className="flex gap-2.5">
+                      <span className="text-sage-deep shrink-0" aria-hidden>
+                        ✓
+                      </span>
+                      <span>{line}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
