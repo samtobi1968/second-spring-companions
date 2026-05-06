@@ -179,7 +179,6 @@ const Services = () => {
                   "Meal preparation and shared mealtimes",
                   "Calm company and conversation",
                   "Pharmacy collection",
-                  "Medication reminders (self-administered)",
                   "Light household tasks and tidying",
                   "Family updates after every visit",
                   "Accompaniment on first walks outside",
