@@ -34,14 +34,14 @@ const SiteFooter = () => (
     <div className="border-t border-cream/10">
       <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-cream/50">
         <div>© {new Date().getFullYear()} Second Spring Companions. All rights reserved.</div>
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-4 items-center">
           <span>ICO Registered</span>
           <span>GDPR Compliant</span>
           <span>Enhanced DBS</span>
-          <Link href="/terms" className="text-xs text-foreground/50 hover:text-foreground transition-colors">
+          <Link href="/terms" className="text-xs text-cream/50 hover:text-cream transition-colors">
             Terms
           </Link>
-          <Link href="/privacy" className="text-xs text-foreground/50 hover:text-foreground transition-colors">
+          <Link href="/privacy" className="text-xs text-cream/50 hover:text-cream transition-colors">
             Privacy
           </Link>
         </div>
