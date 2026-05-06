@@ -38,7 +38,12 @@ const SiteFooter = () => (
           <span>ICO Registered</span>
           <span>GDPR Compliant</span>
           <span>Enhanced DBS</span>
-          <a href="/terms.html" className="text-cream/70 hover:text-cream underline-offset-4 hover:underline">Terms of Service</a>
+          <Link href="/terms" className="text-xs text-foreground/50 hover:text-foreground transition-colors">
+            Terms
+          </Link>
+          <Link href="/privacy" className="text-xs text-foreground/50 hover:text-foreground transition-colors">
+            Privacy
+          </Link>
         </div>
       </div>
     </div>
