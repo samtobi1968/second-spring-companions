@@ -343,7 +343,7 @@ const BecomeASpringer = () => {
               </div>
               <h3 className="font-serif text-3xl mb-3">Thank you.</h3>
               <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-                Your application has been received. One of our founders will review it personally and be in touch within five working days.
+                Your application has been received. One of our founders will review it personally and be in touch within three working days.
               </p>
               <Button asChild variant="luxe">
                 <Link href="/">Return Home <ArrowRight size={16} /></Link>
@@ -352,14 +352,16 @@ const BecomeASpringer = () => {
           ) : (
             <form
               onSubmit={handleSubmit}
+              action={FORMSPREE_ENDPOINT}
+              method="POST"
               className="bg-card p-10 md:p-14 shadow-card space-y-7"
             >
               <div className="grid md:grid-cols-2 gap-6">
                 <Field label="Full Name">
-                  <input required name="name" maxLength={100} className="luxe-input" />
+                  <input required name="full-name" maxLength={100} className="luxe-input" />
                 </Field>
                 <Field label="Are you 18+?">
-                  <select required name="over_18" className="luxe-input" defaultValue="">
+                  <select required name="over-18" className="luxe-input" defaultValue="">
                     <option value="" disabled>Select…</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
@@ -371,7 +373,7 @@ const BecomeASpringer = () => {
                   <input required type="email" name="email" maxLength={255} className="luxe-input" />
                 </Field>
                 <Field label="Mobile">
-                  <input required type="tel" name="mobile" maxLength={20} className="luxe-input" />
+                  <input required type="tel" name="mobile-number" maxLength={20} className="luxe-input" />
                 </Field>
               </div>
               <Field label="Postcode">
@@ -383,10 +385,10 @@ const BecomeASpringer = () => {
                 </legend>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                   {[
-                    { name: "availability_weekday_mornings", label: "Weekday mornings" },
-                    { name: "availability_weekday_afternoons", label: "Weekday afternoons" },
-                    { name: "availability_weekends", label: "Weekends" },
-                    { name: "availability_flexible", label: "Flexible / open to discuss" },
+                    { name: "availability-weekday-mornings", label: "Weekday mornings" },
+                    { name: "availability-weekday-afternoons", label: "Weekday afternoons" },
+                    { name: "availability-weekends", label: "Weekends" },
+                    { name: "availability-flexible", label: "Flexible / open to discuss" },
                   ].map((opt) => (
                     <div key={opt.name} className="flex items-start gap-3">
                       <input
@@ -406,14 +408,14 @@ const BecomeASpringer = () => {
               <Field label="Tell us briefly why you're drawn to working with older adults.">
                 <textarea
                   required
-                  name="why_apply"
+                  name="message"
                   rows={4}
                   maxLength={600}
                   className="luxe-input"
                 />
               </Field>
               <Field label="Do you have an enhanced DBS certificate?">
-                <select required name="dbs_certificate" className="luxe-input" defaultValue="">
+                <select required name="dbs-certificate" className="luxe-input" defaultValue="">
                   <option value="" disabled>Select…</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -421,7 +423,7 @@ const BecomeASpringer = () => {
               </Field>
 
               <div className="pt-2 flex items-start gap-3">
-                <input id="consent" name="gdpr_consent" value="yes" type="checkbox" required className="mt-1.5" />
+                <input id="consent" name="gdpr-consent" value="yes" type="checkbox" required className="mt-1.5" />
                 <label htmlFor="consent" className="text-xs text-muted-foreground leading-relaxed">
                   I consent to Second Spring Companions processing my application in line with their{" "}
                   privacy policy, and confirm I am aged 18 or over and have the right to work in the UK.
@@ -431,7 +433,7 @@ const BecomeASpringer = () => {
               {error && <p className="text-sm text-destructive">{error}</p>}
 
               <div className="pt-4 flex items-center justify-between flex-wrap gap-4">
-                <p className="text-xs text-muted-foreground">We respond within five working days.</p>
+                <p className="text-xs text-muted-foreground">We respond within three working days.</p>
                 <Button type="submit" size="lg" variant="luxe" disabled={submitting}>
                   {submitting ? "Sending..." : "Submit Application"}
                 </Button>
