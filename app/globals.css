@@ -121,3 +121,31 @@
     @apply h-px w-12 bg-foreground/30;
   }
 }
+
+/* Leaflet — Our Locations (react-leaflet) */
+.locations-marker-wrap {
+  background: transparent !important;
+  border: none !important;
+}
+
+.locations-marker-pin {
+  width: 14px;
+  height: 14px;
+  margin: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(145deg, rgb(79 70 229), rgb(49 46 129));
+  border: 2px solid rgb(248 250 252);
+  box-shadow: 0 2px 14px rgba(30, 27, 75, 0.45);
+}
+
+.locations-leaflet-map .leaflet-control-attribution {
+  font-size: 10px;
+  line-height: 1.35;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  border-radius: 4px 0 12px 0;
+}
+
+.locations-leaflet-map .leaflet-tooltip.locations-tooltip.leaflet-tooltip-top::before {
+  border-top-color: rgb(15 23 42) !important;
+}

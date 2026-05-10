@@ -19,6 +19,8 @@ const SiteFooter = () => (
           <li><Link className="text-cream/80 hover:text-cream" href="/why-companionship">Why Companionship?</Link></li>
           <li><a className="text-cream/80 hover:text-cream" href="/#standard">The Standard</a></li>
           <li><Link className="text-cream/80 hover:text-cream" href="/faq">FAQ</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/our-locations">Our Locations</Link></li>
+          <li><Link className="text-cream/80 hover:text-cream" href="/contact">Contact</Link></li>
           <li><Link className="text-cream/80 hover:text-cream" href="/become-a-springer">Become a Springer</Link></li>
         </ul>
       </div>
