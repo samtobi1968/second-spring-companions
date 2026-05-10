@@ -25,7 +25,7 @@ export default function TermsPage() {
             <p className="text-foreground/80 leading-relaxed mb-4">
               The Services are operated by SECOND SPRING COMPANIONS LTD, a company incorporated in
               England & Wales (company number 17166866) with its registered office at 66 Paul
-              Street, London, England, United Kingdom, EC2A 4NA. We are a boutique introductory
+              Street, London, England, United Kingdom, EC2A 4NA. We are an introductory
               registry that connects older adults ("Clients") and their families
               ("Representatives") with vetted companions ("Springers") for companionship and social
               engagement.
@@ -95,7 +95,7 @@ export default function TermsPage() {
             <h2 className="font-serif text-2xl md:text-3xl mb-4">4. Fees, Billing & Cancellations</h2>
             <ul className="list-disc pl-6 space-y-2 text-foreground/80 leading-relaxed">
               <li><strong>Initial Consultation:</strong> The introductory consultation is provided free of charge with no obligation.</li>
-              <li><strong>Hourly Rate:</strong> Companion visits are charged at GBP 28 per hour, subject to a minimum visit length agreed at the point of booking.</li>
+              <li><strong>Hourly Rate:</strong> Companion visits are charged at GBP 26.80 per hour, subject to a minimum visit length agreed at the point of booking.</li>
               <li><strong>Bespoke Plans:</strong> Tailored multi-visit weekly schedules are quoted on a bespoke basis.</li>
               <li><strong>Payments:</strong> Payments must be made via bank transfer to our business account as per the invoice instructions.</li>
               <li><strong>Cancellations:</strong> Visits cancelled with less than 24 hours&apos; notice will be charged at the full rate of the scheduled visit.</li>

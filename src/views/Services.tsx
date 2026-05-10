@@ -49,7 +49,7 @@ const Services = () => {
                   ))}
                 </div>
                 <p className="mt-6 text-sm text-foreground/50">
-                  Uniquely unhurried visits from £28 / hr · 2-hour minimum
+                  Uniquely unhurried visits from £26.80 / hr · 2-hour minimum
                 </p>
                 <ul className="mt-6 space-y-2.5 text-sm text-foreground/75">
                   {p.featureBullets.map((line) => (
@@ -123,6 +123,7 @@ const Services = () => {
                   t: "Settling In",
                   c: "Daily visits in the first week back, with meals, conversation, gentle errands, family updates and reassurance during the most fragile days of recovery.",
                   bullets: [
+                    "Daily 2-hour visits for the first seven days",
                     "Hot meal preparation and shared mealtimes",
                     "Encouragement of fluids and light nutrition",
                     "Light tidying laundry and errands",
@@ -152,15 +153,15 @@ const Services = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-px border-t border-border">
               <div className="bg-background p-8 md:p-10 text-center">
-                <p className="font-serif text-3xl md:text-4xl text-primary mb-2">£45–£65</p>
+                <p className="font-serif text-4xl md:text-5xl tracking-tight text-primary mb-2">£50–£80</p>
                 <p className="text-sm text-foreground/70 leading-relaxed">Home preparation visit</p>
               </div>
               <div className="bg-background p-8 md:p-10 text-center">
-                <p className="font-serif text-3xl md:text-4xl text-primary mb-2">£80–£120</p>
+                <p className="font-serif text-4xl md:text-5xl tracking-tight text-primary mb-2">£95–£140</p>
                 <p className="text-sm text-foreground/70 leading-relaxed">Hospital to home accompaniment</p>
               </div>
               <div className="bg-background p-8 md:p-10 text-center">
-                <p className="font-serif text-3xl md:text-4xl text-primary mb-2">From £350</p>
+                <p className="font-serif text-4xl md:text-5xl tracking-tight text-primary mb-2">From £395</p>
                 <p className="text-sm text-foreground/70 leading-relaxed">Full first-week Homecoming package</p>
               </div>
             </div>

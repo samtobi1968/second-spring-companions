@@ -19,7 +19,7 @@ In `src/App.tsx`, import `Pricing` and add `<Route path="/pricing" element={<Pri
    - `Button variant="luxe"` → `/#kindred-spirit` ("Claim Your Introductory Visit")
 
 4. **Pricing tiers** — `py-28 md:py-36`, `grid md:grid-cols-3 gap-px bg-border border border-border` to match the bordered grid pattern used in Index pillars
-   - Card 1 — **Standard Springer Visit**, £28 / hour, description + 4-feature list (Check icons, sage-deep)
+   - Card 1 — **Standard Springer Visit**, £26.80 / hour, description + 4-feature list (Check icons, sage-deep)
    - Card 2 — **Springer Companionship Retainer**, £220 / month, marked "Most Popular" via a small sage badge (`bg-sage-deep text-cream` pill, top-right)
    - Each card: `bg-background p-10 flex flex-col`, serif title, large `font-serif text-5xl` price, feature list, CTA `Button variant="luxe"` → `/#kindred-spirit`
    - Note: brief skips "Card 2"; only the two cards above will be rendered (grid becomes `md:grid-cols-2` to stay balanced — flagged below for confirmation)

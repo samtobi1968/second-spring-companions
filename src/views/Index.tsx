@@ -4,9 +4,10 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import PricingCard from "@/components/PricingCard";
 import KindredSpiritForm from "@/components/KindredSpiritForm";
-import heroImg from "@/assets/hero-companions.jpg";
+import heroImg from "@/assets/pexels-olly-3768131.jpg";
 import { ArrowRight, Check, Home, MapPin, BookOpen, Heart } from "lucide-react";
 import { pillars } from "@/data/pillars";
+import { PRIMARY_SERVICE_HUBS } from "@/data/serviceAreas";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
   <div className="flex items-center gap-3 mb-5">
@@ -25,17 +26,20 @@ const Index = () => {
       <section className="relative min-h-[100svh] flex items-end overflow-hidden">
         <img
           src={heroImg.src}
-          alt="An older woman laughing warmly with her Springer companion at home"
+          alt="An older woman and her companion sharing a warm, attentive moment together outdoors"
           width={1600}
           height={1200}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="relative container pb-20 md:pb-28 pt-32 text-cream">
           <div className="max-w-3xl animate-fade-up">
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-10 bg-cream/50" />
-              <span className="eyebrow text-cream/80">based in London, providing bespoke matching for families across the UK</span>
+              <span className="eyebrow text-cream/80">
+                Premium companionship across Harpenden, St Albans, Redbourn &amp; London — bespoke matching for families
+                UK-wide
+              </span>
             </div>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight">
               Second Spring Companions
@@ -79,7 +83,7 @@ const Index = () => {
             An agency for curated companionship in later life
           </h2>
           <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-3xl">
-            Second Spring Companions is a boutique introductory agency that matches older adults with{" "}
+            Second Spring Companions is an introductory agency that matches older adults with{" "}
             <span className="font-semibold text-sage-deep">Springers</span>, dedicated, self-employed companions who
             provide more than just a check-in. We believe in renewal at every stage of life. By matching individuals
             based on personality and interests, we provide the intellectual spark and social energy that traditional care
@@ -87,6 +91,37 @@ const Index = () => {
             <span className="font-semibold text-sage-deep">Springer</span> is a carefully hand-picked catalyst for
             bringing a genuine spring back into your loved one&apos;s step.
           </p>
+        </div>
+      </section>
+
+      {/* PRIMARY SERVICE HUBS */}
+      <section className="border-y border-border bg-cream-deep/60 py-16 md:py-20">
+        <div className="container">
+          <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-14">
+            <div className="max-w-xl">
+              <Eyebrow>Service Areas</Eyebrow>
+              <h2 className="font-serif text-3xl leading-tight text-foreground md:text-4xl">
+                Primary companionship hubs
+              </h2>
+              <p className="mt-4 text-foreground/75 leading-relaxed">
+                Our core visits run across Harpenden, St Albans, Redbourn, and London — with the same careful onboarding and
+                personality-led matching wherever you need us.
+              </p>
+              <Button asChild variant="outlineLuxe" size="lg" className="mt-8">
+                <Link href="/our-locations">View locations map</Link>
+              </Button>
+            </div>
+            <ul className="flex flex-wrap gap-3 lg:max-w-md lg:justify-end">
+              {PRIMARY_SERVICE_HUBS.map((hub) => (
+                <li
+                  key={hub.name}
+                  className="rounded-full border border-border bg-background px-5 py-2.5 text-center font-semibold text-foreground shadow-soft"
+                >
+                  {hub.name}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -226,7 +261,7 @@ const Index = () => {
                 meta: "Ongoing",
                 title: "Regular Visits Begin",
                 copy: "Scheduled visits start at a pace that suits your loved one building familiarity, friendship and routine over time.",
-                price: "From £28 / hour",
+                price: "From £26.80 / hour",
               },
             ].map((s) => (
               <div key={s.title} className="bg-background p-10 md:p-14 grid md:grid-cols-12 gap-8 items-start">
@@ -283,8 +318,8 @@ const Index = () => {
               your match and call at your preferred time.
             </p>
             <p className="mt-3 text-sm text-muted-foreground/90">
-              While we have deep roots in the London community, we are proud to offer a Bespoke
-              National Search for families seeking springer companionship beyond.
+              Alongside our primary hubs in Harpenden, St Albans, Redbourn, and London, we offer a bespoke national search
+              for families seeking Springer companionship further afield.
             </p>
           </div>
           <KindredSpiritForm />

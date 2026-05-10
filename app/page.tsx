@@ -3,9 +3,9 @@ import Index from "@/views/Index";
 import { buildPageMetadata } from "@/lib/buildPageMetadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Second Spring Companions | Bespoke Companion Matching, London & UK-Wide",
+  title: "Second Spring Companions | Bespoke Companion Matching, Hertfordshire & London",
   description:
-    "A boutique companion agency matching older adults with dedicated Springers — chosen for shared interests, intellect and personality. Greater London and surrounding areas.",
+    "Companion matching with Springers chosen for shared interests and personality. Primary hubs: Harpenden, St Albans, Redbourn, and London — plus bespoke UK-wide search.",
   path: "/",
 });
 

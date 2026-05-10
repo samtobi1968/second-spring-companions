@@ -22,7 +22,7 @@ const faqCategories = [
       },
       {
         q: "How does Second Spring Companions work?",
-        a: "We are a boutique introductory agency based in London. We learn what matters to your family, then match you with a Springer whose temperament and interests align. We facilitate introductions and ongoing coordination; your relationship is directly with your Springer, supported by us throughout.",
+        a: "We are an introductory agency based in London. We learn what matters to your family, then match you with a Springer whose temperament and interests align. We facilitate introductions and ongoing coordination; your relationship is directly with your Springer, supported by us throughout.",
       },
       {
         q: "What do you mean by a personality match?",
@@ -43,7 +43,7 @@ const faqCategories = [
       },
       {
         q: "Where do you operate?",
-        a: "We have deep roots in the London community and coordinate introductions from our London base. We are also proud to offer a bespoke UK-wide search for families who want the same careful matching outside the capital — timelines and logistics are discussed openly at enquiry.",
+        a: "Our primary companionship hubs are Harpenden, St Albans, Redbourn, and London — where we coordinate most introductions day to day. We coordinate nationally from our London base and also offer a bespoke UK-wide search for families who want the same careful matching elsewhere — timelines and logistics are discussed openly at enquiry.",
       },
       {
         q: "Are your Springers insured?",
@@ -64,7 +64,7 @@ const faqCategories = [
     items: [
       {
         q: "How much does a Springer cost?",
-        a: "Rates reflect the calibre of our Springers and the bespoke nature of each placement. Costs vary by location, frequency, and the shape of visits you agree with your Springer. Use the personality match form on our homepage and we will come back with a clear, tailored outline — no surprises.",
+        a: "Standard Springer companionship visits typically begin from £26.80 per hour with a two-hour minimum (exact arrangements are agreed with your Springer). Rates reflect calibre and the bespoke nature of each placement and may vary by frequency and visit shape. Use the personality match form on our homepage and we will come back with a clear, tailored outline — no surprises.",
       },
       {
         q: "Who employs the Springer?",

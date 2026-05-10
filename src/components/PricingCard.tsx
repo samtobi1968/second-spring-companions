@@ -17,7 +17,7 @@ const PricingCard = () => (
     </div>
     <h3 className="font-serif text-3xl md:text-4xl mb-2">Standard Springer Visit</h3>
     <div className="flex items-baseline gap-2 mb-8 pb-8 border-b border-border">
-      <span className="font-serif text-6xl text-primary">£28</span>
+      <span className="font-serif text-5xl text-primary sm:text-6xl tracking-tight">£26.80</span>
       <span className="text-muted-foreground">per hour</span>
     </div>
     <ul className="space-y-4 mb-10">

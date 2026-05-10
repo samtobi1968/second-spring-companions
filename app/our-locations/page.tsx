@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/buildPageMetadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Our Locations | Second Spring Companions",
   description:
-    "Primary service areas across Hertfordshire, Cambridge, and London — boutique companionship with a discreet, medical-concierge standard of care.",
+    "Primary companionship hubs: Harpenden, St Albans, Redbourn, and London — interactive map and service details aligned.",
   path: "/our-locations",
 });
 

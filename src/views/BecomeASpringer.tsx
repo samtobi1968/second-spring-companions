@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import portrait from "@/assets/springer-portrait.jpg";
 import {
   Accordion,
   AccordionItem,
@@ -68,35 +67,23 @@ const BecomeASpringer = () => {
       <SiteHeader />
 
       {/* HERO */}
-      <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 bg-gradient-sage overflow-hidden">
-        <div className="container grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7 animate-fade-up">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="rule" />
-              <span className="eyebrow text-foreground/60">Become a Springer</span>
-            </div>
-            <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] tracking-tight">
-              Make a real difference — <span className="italic text-sage-deep">on your terms.</span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-xl">
-              Join our community of Springers and bring warmth, conversation, and companionship to
-              older adults in your area.
-            </p>
-            <div className="mt-10">
-              <Button asChild size="xl" variant="luxe">
-                <a href="#apply">Apply to Become a Springer</a>
-              </Button>
-            </div>
+      <section className="relative overflow-hidden bg-gradient-sage pb-20 pt-32 md:pb-28 md:pt-44">
+        <div className="container max-w-3xl animate-fade-up">
+          <div className="mb-6 flex items-center gap-3">
+            <div className="rule" />
+            <span className="eyebrow text-foreground/60">Become a Springer</span>
           </div>
-          <div className="lg:col-span-5">
-            <img
-              src={portrait.src}
-              alt="A warm, friendly Springer companion"
-              width={1200}
-              height={1400}
-              loading="lazy"
-              className="w-full aspect-[4/5] object-cover shadow-elegant"
-            />
+          <h1 className="font-serif text-5xl leading-[1.02] tracking-tight md:text-7xl">
+            Make a real difference — <span className="italic text-sage-deep">on your terms.</span>
+          </h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/75 md:text-xl">
+            Join our community of Springers and bring warmth, conversation, and companionship to older adults in your
+            area.
+          </p>
+          <div className="mt-10">
+            <Button asChild size="xl" variant="luxe">
+              <a href="#apply">Apply to Become a Springer</a>
+            </Button>
           </div>
         </div>
       </section>

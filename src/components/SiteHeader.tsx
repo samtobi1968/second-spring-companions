@@ -20,6 +20,7 @@ const nav: NavItem[] = [
   { to: "/why-companionship", label: "Why Companionship?" },
   { to: "/our-springers", label: "Our Springers" },
   { to: "/faq", label: "FAQ" },
+  { to: "/our-locations", label: "Our Locations" },
   { to: "/become-a-springer", label: "Become a Springer" },
 ];
 

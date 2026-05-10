@@ -2,13 +2,13 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import { MapPin } from "lucide-react";
+import { PRIMARY_SERVICE_HUBS } from "@/data/serviceAreas";
 
 const OurLocationsMap = dynamic(() => import("@/components/locations/OurLocationsMap"), {
   ssr: false,
   loading: () => (
     <div
-      className="flex h-[500px] w-full items-center justify-center rounded-2xl border border-slate-200/90 bg-gradient-to-br from-slate-100 to-indigo-50/40 text-sm font-medium text-slate-500 lg:h-[calc(100vh-10rem)] lg:min-h-[560px]"
+      className="flex h-full min-h-[inherit] w-full items-center justify-center rounded-xl border border-border bg-muted/30 text-sm font-medium text-muted-foreground"
       aria-hidden
     >
       Loading map…
@@ -16,80 +16,65 @@ const OurLocationsMap = dynamic(() => import("@/components/locations/OurLocation
   ),
 });
 
-const SERVICE_AREAS = [
-  "St Albans",
-  "Harpenden",
-  "Hatfield",
-  "Radlett",
-  "Wheathampstead",
-  "Redbourn",
-  "Sandridge",
-  "Cambridge",
-  "London",
-] as const;
-
 const OurLocations = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50/25">
+    <div className="min-h-screen bg-background">
       <SiteHeader />
 
       <main className="pb-24 pt-28 lg:pb-28 lg:pt-36">
         <div className="container">
-          <header className="mb-12 max-w-2xl lg:mb-14">
-            <div className="mb-4 flex items-center gap-3">
-              <div className="h-px w-10 bg-indigo-400/70" />
-              <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-slate-500">
-                Coverage
-              </span>
+          <header className="mb-10 max-w-2xl lg:mb-12">
+            <div className="mb-5 flex items-center gap-3">
+              <div className="rule" />
+              <span className="eyebrow text-foreground/60">Coverage</span>
             </div>
-            <h1 className="font-serif text-4xl tracking-tight text-slate-900 md:text-6xl md:leading-[1.08]">
-              Our <span className="italic text-indigo-950">Locations</span>
+            <h1 className="font-serif text-4xl tracking-tight text-foreground md:text-6xl md:leading-[1.08]">
+              Our <span className="italic text-sage-deep">Locations</span>
             </h1>
-            <p className="mt-5 text-lg leading-relaxed text-slate-600 md:text-xl">
-              Discreet, concierge-led companionship across the South East and East of England — plotted
-              precisely where our Springers are active today.
+            <p className="mt-5 text-lg leading-relaxed text-foreground/75 md:text-xl">
+              Discreet, concierge-led companionship across our primary South East hubs — the same pins on the map as in
+              the list beside it.
             </p>
           </header>
 
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-stretch lg:gap-14">
-            <div className="lg:col-span-7 lg:min-h-0">
+          {/* Mobile: map ~40vh then copy; desktop: two-column grid */}
+          <div className="flex flex-col gap-8 lg:grid lg:grid-cols-12 lg:items-stretch lg:gap-14">
+            <div className="order-1 h-[40vh] min-h-[260px] shrink-0 lg:order-none lg:col-span-7 lg:h-auto lg:min-h-[560px] lg:self-stretch">
               <OurLocationsMap />
-              <p className="mt-3 text-center text-[11px] text-slate-400 lg:text-left">
-                Map tiles © OpenStreetMap contributors · © CARTO · Zoom with toolbar or pinch; scroll wheel disabled so the page stays easy to read.
+              <p className="mt-3 text-center text-[11px] text-muted-foreground lg:text-left">
+                Pins match our primary service hubs listed on the right. Map tiles © OpenStreetMap contributors · © CARTO.
               </p>
             </div>
 
-            <aside className="flex flex-col justify-center rounded-2xl border border-slate-200/90 bg-white/90 p-8 shadow-[0_24px_70px_-28px_rgba(49,46,129,0.28)] backdrop-blur-sm md:p-11 lg:col-span-5">
-              <div className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-indigo-100 bg-gradient-to-r from-indigo-50 to-slate-50 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-indigo-950">
-                <MapPin className="h-3.5 w-3.5 text-indigo-600" aria-hidden />
-                Service area
-              </div>
+            <aside className="order-2 flex flex-1 flex-col justify-center border-border lg:order-none lg:col-span-5 lg:border-l lg:pl-10 xl:pl-12">
+              <div className="eyebrow mb-3 text-sage-deep">Primary service hubs</div>
 
-              <h2 className="font-serif text-3xl text-slate-900 md:text-[2.15rem] md:leading-snug">
-                Where we primarily service
-              </h2>
+              <h2 className="font-serif text-3xl leading-tight text-foreground md:text-5xl">Where we primarily service</h2>
 
-              <p className="mt-4 text-base leading-relaxed text-slate-600">We cover these areas in the UK:</p>
+              <p className="mt-5 text-base leading-relaxed text-foreground/75 md:text-lg">
+                These four locations are our primary companionship hubs in the South East — aligned exactly with the map.
+              </p>
 
-              <ul className="mt-8 space-y-4 border-t border-slate-100 pt-8">
-                {SERVICE_AREAS.map((area) => (
-                  <li key={area} className="flex gap-3">
-                    <span
-                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-900 shadow-sm ring-2 ring-indigo-100"
-                      aria-hidden
-                    />
-                    <span className="font-semibold tracking-tight text-slate-900">{area}</span>
+              <ul className="mt-8 space-y-4 border-t border-border pt-8">
+                {PRIMARY_SERVICE_HUBS.map((hub) => (
+                  <li key={hub.name}>
+                    <div className="rounded-lg border border-border bg-card px-5 py-4 shadow-card">
+                      <span className="eyebrow mb-1 block text-[10px] tracking-[0.22em] text-sage-deep">Primary hub</span>
+                      <span className="font-serif text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                        {hub.name}
+                      </span>
+                    </div>
                   </li>
                 ))}
               </ul>
 
-              <p className="mt-10 text-sm leading-relaxed text-slate-600">
+              <p className="mt-10 text-sm leading-relaxed text-foreground/75 md:text-base">
                 <Link
                   href="/contact"
-                  className="font-medium text-indigo-800 underline decoration-indigo-200 underline-offset-[5px] transition-colors hover:text-indigo-950 hover:decoration-indigo-400"
+                  className="font-medium text-primary underline-offset-4 transition-colors hover:underline"
                 >
-                  Don’t see your area? We are constantly expanding so if you or your loved one lives
-                  elsewhere, please don’t hesitate to get in touch!
+                  Don&apos;t see your area? We are constantly expanding! If you or your loved one lives elsewhere, please
+                  don&apos;t hesitate to get in touch!
                 </Link>
               </p>
             </aside>
