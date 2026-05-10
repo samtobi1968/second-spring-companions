@@ -43,7 +43,7 @@ const faqCategories = [
       },
       {
         q: "Where do you operate?",
-        a: "Our primary companionship hubs are Harpenden, St Albans, Redbourn, and London — where we coordinate most introductions day to day. We coordinate nationally from our London base and also offer a bespoke UK-wide search for families who want the same careful matching elsewhere — timelines and logistics are discussed openly at enquiry.",
+        a: "Our primary companionship hubs are Harpenden, St Albans, Redbourn, and London, where we coordinate most introductions day to day. We coordinate nationally from our London base and also offer a bespoke UK-wide search for families who want the same careful matching elsewhere — timelines and logistics are discussed openly at enquiry.",
       },
       {
         q: "Are your Springers insured?",
