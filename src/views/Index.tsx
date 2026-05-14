@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import PricingCard from "@/components/PricingCard";
-import KindredSpiritForm from "@/components/KindredSpiritForm";
 import heroImg from "@/assets/pexels-olly-3768131.jpg";
 import { ArrowRight, Check, Home, MapPin, BookOpen, Heart } from "lucide-react";
 import { pillars } from "@/data/pillars";
@@ -37,7 +36,7 @@ const Index = () => {
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-10 bg-cream/50" />
               <span className="eyebrow text-cream/80">
-                Premium companionship across Harpenden, St Albans, Redbourn &amp; London — bespoke matching for families
+                Premium companionship across Harpenden, St Albans, Redbourn &amp; London, bespoke matching for families
                 UK-wide
               </span>
             </div>
@@ -104,7 +103,7 @@ const Index = () => {
                 Primary companionship hubs
               </h2>
               <p className="mt-4 text-foreground/75 leading-relaxed">
-                Our core visits run across Harpenden, St Albans, Redbourn, and London — with the same careful onboarding and
+                Our core visits run across Harpenden, St Albans, Redbourn, and London, with the same careful onboarding and
                 personality-led matching wherever you need us.
               </p>
               <Button asChild variant="outlineLuxe" size="lg" className="mt-8">
@@ -222,6 +221,62 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="homecoming-preview" className="py-28 md:py-36 bg-cream-deep">
+        <div className="container grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col">
+            <Eyebrow>When It Matters Most</Eyebrow>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight mt-2">The Homecoming Service</h2>
+            <p className="mt-6 text-lg text-foreground/75 leading-relaxed">
+              The first 72 hours following a hospital stay are often the hardest, not just medically, but practically and
+              emotionally. A Springer transforms the transition by preparing the home before discharge, accompanying your
+              loved one from the ward, and providing daily visits throughout the first week to provide meals, company and
+              family updates.
+            </p>
+            <p className="mt-4 text-foreground/60 leading-relaxed">
+              Designed for families navigating a sudden discharge. Arranged at short notice. No clinical care, just a calm,
+              capable, and human presence exactly when it is needed most.
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" variant="luxe">
+                <Link href="/services#homecoming">
+                  Learn About Homecoming <ArrowRight size={16} className="ml-2" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="ghostLuxe">
+                <a href="/#kindred-spirit">
+                  Arrange a Private Consultation <ArrowRight size={16} className="ml-2" />
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-px bg-border border border-border">
+            {[
+              {
+                title: "The Warm Welcome",
+                copy: "Airing rooms, stocking the fridge, and ensuring the home is warm and ready for arrival.",
+              },
+              {
+                title: "Seamless Transition",
+                copy: "A Springer is with you during discharge and transport from ward to front door.",
+              },
+              {
+                title: "The Recovery Shield",
+                copy: "Daily visits during the first week to manage prescriptions, errands, and meal preparation.",
+              },
+              {
+                title: "Restoring Rhythm",
+                copy: "High-level companionship focused on rebuilding confidence and independence.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-background p-7 md:p-8 flex flex-col gap-2.5">
+                <span className="font-serif text-lg md:text-xl text-sage-deep leading-tight">{item.title}</span>
+                <span className="text-xs md:text-sm text-foreground/65 leading-relaxed">{item.copy}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* THE SECOND SPRING STANDARD */}
       <section id="standard" className="py-28 md:py-36">
         <div className="container">
@@ -301,11 +356,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* KINDRED SPIRIT FORM */}
-      <section id="kindred-spirit" className="py-28 md:py-36 bg-gradient-sage">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="flex items-center justify-center gap-3 mb-5">
+      {/* KINDRED SPIRIT — Tally embed (form + success UI live inside iframe) */}
+      <section id="kindred-spirit" className="bg-gradient-sage py-28 text-center md:py-36">
+        <div className="container flex w-full flex-col items-center justify-center text-center">
+          <div className="mb-12 w-full max-w-2xl md:mb-14">
+            <div className="mb-5 flex items-center justify-center gap-3">
               <div className="rule" />
               <span className="eyebrow text-foreground/60">The Kindred Spirit Discovery</span>
               <div className="rule" />
@@ -314,15 +369,27 @@ const Index = () => {
               Find their <span className="italic text-sage-deep">kindred spirit.</span>
             </h2>
             <p className="mt-6 text-muted-foreground">
-              A short, three-step form. Tell us when suits you best and we will personally review
-              your match and call at your preferred time.
+              A short form. Tell us when suits you best and we will personally review your match and
+              call at your preferred time.
             </p>
             <p className="mt-3 text-sm text-muted-foreground/90">
               Alongside our primary hubs in Harpenden, St Albans, Redbourn, and London, we offer a bespoke national search
               for families seeking Springer companionship further afield.
             </p>
           </div>
-          <KindredSpiritForm />
+          <div className="flex flex-col items-center justify-center w-full min-h-[400px] text-center">
+            <div className="w-full max-w-[700px] mx-auto flex justify-center">
+              <iframe
+                src="https://tally.so/embed/vGJXJ4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                width="100%"
+                height={600}
+                frameBorder={0}
+                className="w-full max-w-full overflow-hidden border-0"
+                style={{ margin: "0 auto", display: "block" }}
+                title="Kindred Spirit Discovery — personality match enquiry"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
