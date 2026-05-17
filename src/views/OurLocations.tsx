@@ -8,7 +8,7 @@ const OurLocationsMap = dynamic(() => import("@/components/locations/OurLocation
   ssr: false,
   loading: () => (
     <div
-      className="flex h-full min-h-[inherit] w-full items-center justify-center rounded-xl border border-border bg-muted/30 text-sm font-medium text-muted-foreground"
+      className="flex h-full min-h-0 w-full items-center justify-center rounded-xl border border-border bg-muted/30 text-sm font-medium text-muted-foreground"
       aria-hidden
     >
       Loading map…
@@ -32,27 +32,32 @@ const OurLocations = () => {
               Our <span className="italic text-sage-deep">Locations</span>
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-foreground/75 md:text-xl">
-              Discreet, concierge-led companionship across our primary South East hubs — the same pins on the map as in
+              Discreet, concierge-led companionship across our primary South East hubs, the same pins on the map as in
               the list beside it.
             </p>
           </header>
 
-          {/* Mobile: map ~40vh then copy; desktop: two-column grid */}
-          <div className="flex flex-col gap-8 lg:grid lg:grid-cols-12 lg:items-stretch lg:gap-14">
-            <div className="order-1 h-[40vh] min-h-[260px] shrink-0 lg:order-none lg:col-span-7 lg:h-auto lg:min-h-[560px] lg:self-stretch">
-              <OurLocationsMap />
-              <p className="mt-3 text-center text-[11px] text-muted-foreground lg:text-left">
-                Pins match our primary service hubs listed on the right. Map tiles © OpenStreetMap contributors · © CARTO.
+          {/* Mobile: map → caption → hubs stack; desktop: two-column grid */}
+          <div className="flex flex-col gap-10 sm:gap-12 lg:grid lg:grid-cols-12 lg:items-stretch lg:gap-14">
+            <div className="order-1 flex w-full flex-col gap-4 sm:gap-5 lg:order-none lg:col-span-7 lg:min-h-[560px] lg:self-stretch">
+              <div
+                className="locations-map-viewport relative h-[40vh] min-h-[260px] w-full shrink-0 overflow-hidden rounded-xl lg:h-auto lg:min-h-[520px] lg:flex-1"
+                aria-label="Map of primary service hubs"
+              >
+                <OurLocationsMap />
+              </div>
+              <p className="block w-full px-0.5 text-center text-[11px] leading-relaxed text-muted-foreground sm:text-xs lg:text-left">
+                Pins match our primary service hubs listed below on mobile and beside the map on larger screens.
               </p>
             </div>
 
-            <aside className="order-2 flex flex-1 flex-col justify-center border-border lg:order-none lg:col-span-5 lg:border-l lg:pl-10 xl:pl-12">
+            <aside className="order-2 flex flex-1 flex-col justify-center border-t border-border/70 pt-8 sm:pt-10 lg:order-none lg:col-span-5 lg:border-l lg:border-t-0 lg:pt-0 lg:pl-10 xl:pl-12">
               <div className="eyebrow mb-3 text-sage-deep">Primary service hubs</div>
 
               <h2 className="font-serif text-3xl leading-tight text-foreground md:text-5xl">Where we primarily service</h2>
 
               <p className="mt-5 text-base leading-relaxed text-foreground/75 md:text-lg">
-                These four locations are our primary companionship hubs in the South East — aligned exactly with the map.
+                These four locations are our primary companionship hubs in the South East, aligned exactly with the map.
               </p>
 
               <ul className="mt-8 space-y-4 border-t border-border pt-8">

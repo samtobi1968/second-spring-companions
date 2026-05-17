@@ -377,14 +377,23 @@ const Index = () => {
               for families seeking Springer companionship further afield.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center w-full min-h-[400px] text-center">
-            <div className="w-full max-w-[700px] mx-auto flex justify-center">
+          <div className="w-full flex flex-col items-center justify-center text-center py-20">
+            <div
+              style={{
+                width: "100%",
+                maxWidth: 700,
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <iframe
+                className="kindred-tally-iframe w-full max-w-full overflow-hidden border-0"
                 src="https://tally.so/embed/vGJXJ4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
                 width="100%"
                 height={600}
                 frameBorder={0}
-                className="w-full max-w-full overflow-hidden border-0"
                 style={{ margin: "0 auto", display: "block" }}
                 title="Kindred Spirit Discovery — personality match enquiry"
               />
