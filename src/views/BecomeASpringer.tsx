@@ -1,8 +1,7 @@
 ﻿"use client";
 
-import { useEffect } from "react";
-import TallyEmbed from "tally-embed";
 import { Button } from "@/components/ui/button";
+import { TallyEmbedForm } from "@/components/TallyEmbedForm";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import {
@@ -20,18 +19,7 @@ import {
   Calendar,
 } from "lucide-react";
 
-const TALLY_SPRINGER_EMBED_SRC = TallyEmbed.getEmbedUrl("9qRJ1E", {
-  alignLeft: true,
-  hideTitle: true,
-  transparentBackground: true,
-  dynamicHeight: true,
-});
-
 const BecomeASpringer = () => {
-  useEffect(() => {
-    void TallyEmbed.loadEmbeds();
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -293,31 +281,8 @@ const BecomeASpringer = () => {
             </p>
           </div>
 
-          <div className="w-full flex flex-col items-center justify-center text-center">
-            <div
-              className="w-full max-w-[700px] mx-auto flex justify-center"
-              style={{
-                width: "100%",
-                maxWidth: 700,
-                marginLeft: "auto",
-                marginRight: "auto",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <iframe
-                data-tally-src={TALLY_SPRINGER_EMBED_SRC}
-                loading="lazy"
-                width="100%"
-                height={500}
-                frameBorder={0}
-                marginHeight={0}
-                marginWidth={0}
-                title="Springer application form"
-                className="springer-tally-iframe w-full overflow-hidden border-0"
-                style={{ margin: "0 auto", display: "block" }}
-              />
-            </div>
+          <div className="flex w-full flex-col items-center justify-center px-1">
+            <TallyEmbedForm minHeight={500} />
           </div>
         </div>
       </section>
