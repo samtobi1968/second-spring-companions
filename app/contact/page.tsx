@@ -28,7 +28,7 @@ export default function ContactPage() {
           <h1 className="font-serif text-5xl leading-[1.08] tracking-tight md:text-6xl">Get in touch.</h1>
           <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
             Whether you are exploring companionship for the first time or checking coverage beyond our core
-            locations, our team replies thoughtfully — usually within one working day.
+            locations, our team replies thoughtfully, usually within one working day.
           </p>
 
           <div className="mt-12 rounded-none border border-border bg-card p-10 shadow-card md:p-12">

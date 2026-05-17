@@ -27,8 +27,8 @@ const WhyCompanionship = () => (
           Why <span className="italic text-sage-deep">companionship?</span>
         </h1>
         <p className="mt-8 text-lg md:text-xl text-foreground/75 max-w-2xl leading-relaxed">
-          The evidence is clear. Genuine human connection is one of the most powerful — and most
-          overlooked — interventions for healthy ageing.
+          The evidence is clear. Genuine human connection is one of the most powerful, and most
+          overlooked, interventions for healthy ageing.
         </p>
       </div>
     </section>
@@ -59,7 +59,7 @@ const WhyCompanionship = () => (
               stat: "1.4M",
               src: "Age UK, 2024",
               href: "https://www.ageuk.org.uk",
-              title: "Older adults in England are chronically lonely — a figure rising year on year.",
+              title: "Older adults in England are chronically lonely, a figure rising year on year.",
               copy: "Of those, Age UK estimates over 200,000 go a full week without speaking to anyone.",
             },
             {
@@ -90,9 +90,9 @@ const WhyCompanionship = () => (
       <div className="py-16 bg-background">
         <div className="max-w-2xl mx-auto text-center">
           <p className="font-serif italic text-2xl md:text-3xl text-foreground/80 leading-relaxed">
-            Behind every statistic is a family like yours. A parent who stopped calling as much. A
-            person who used to fill a room. Companionship does not fix everything — but it gives
-            something back that quietly matters more than almost anything else.
+            We look past the statistics to see the person. The Mum whose rhythm has changed, but who still has so much to
+            share. The Dad whose vibe can fill a room. Companionship doesn&apos;t fix everything, but it gives back
+            something that quietly matters more than almost anything else.
           </p>
         </div>
       </div>

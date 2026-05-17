@@ -18,12 +18,12 @@ export const pillars: Pillar[] = [
     hook: "Real talk, shared memories and intellectual company.",
     icon: MessagesSquare,
     description: [
-      "At the centre of every Springer visit is the simple, profound act of being heard. Our companions are chosen for their conversational depth — people who delight in stories of childhood, careers, love, loss and the small absurdities of life.",
+      "At the centre of every Springer visit is the simple, profound act of being heard. Our companions are chosen for their conversational depth, people who delight in stories of childhood, careers, love, loss and the small absurdities of life.",
       "Whether it is a long discussion about Sunday papers, a debate over a favourite novelist, or quiet reminiscence over old photographs, Connection & Conversation is where genuine friendship is built.",
     ],
     featureBullets: [
       "Chosen for conversational depth",
-      "Consistent Springer — no rotating visitors",
+      "Consistent Springer, no rotating visitors",
       "Tailored to your loved one's pace and interests",
       "Intellectual and emotional companionship",
     ],
@@ -35,7 +35,7 @@ export const pillars: Pillar[] = [
     hook: "Galleries, gardens, books. Rediscover your spark.",
     icon: Palette,
     description: [
-      "Later life should never be the end of curiosity. Our Springers actively rekindle the hobbies that once brought your loved one joy — and gently introduce new ones.",
+      "Later life should never be the end of curiosity. Our Springers actively rekindle the hobbies that once brought your loved one joy, and gently introduce new ones.",
       "A morning at the Royal Academy, an afternoon tending the rose bed, a weekly book club for two, or a competitive game of Scrabble. Passion and play are central to feeling alive.",
     ],
     featureBullets: [
@@ -52,7 +52,7 @@ export const pillars: Pillar[] = [
     hook: "Light help, meal prep and a Cornetto run on a hot day.",
     icon: Home,
     description: [
-      "The little things matter most. Our Springers help bring quiet order to the home — a tidy kitchen, a freshly prepared meal, the laundry folded, the post sorted.",
+      "The little things matter most. Our Springers help bring quiet order to the home, a tidy kitchen, a freshly prepared meal, the laundry folded, the post sorted.",
       "And on a warm afternoon, perhaps a stroll to the corner shop for a Cornetto. This is not domestic labour; it is gentle, attentive companionship that keeps the home feeling like home.",
     ],
     featureBullets: [
@@ -69,7 +69,7 @@ export const pillars: Pillar[] = [
     hook: "Video calls, social media and personal music playlists.",
     icon: Smartphone,
     description: [
-      "Modern technology can feel overwhelming — but it is also the thread that keeps families close. Our Springers patiently help with WhatsApp video calls to grandchildren, Facebook updates, online shopping and email.",
+      "Modern technology can feel overwhelming, but it is also the thread that keeps families close. Our Springers patiently help with WhatsApp video calls to grandchildren, Facebook updates, online shopping and email.",
       "We will set up a Spotify playlist of the songs your loved one danced to in their twenties, organise treasured photos into albums, and make sure the iPad never becomes a stranger.",
     ],
     featureBullets: [

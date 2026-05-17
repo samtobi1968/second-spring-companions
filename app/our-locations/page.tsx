@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/buildPageMetadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Our Locations | Second Spring Companions",
   description:
-    "Primary companionship hubs: Harpenden, St Albans, Redbourn, and London — interactive map and service details aligned.",
+    "Primary companionship hubs: Harpenden, St Albans, Redbourn, and London, interactive map and service details aligned.",
   path: "/our-locations",
 });
 

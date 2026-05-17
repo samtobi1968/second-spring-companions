@@ -81,7 +81,7 @@ const Services = () => {
             </h2>
             <p className="text-lg text-foreground/75 leading-relaxed">
               The NHS handles the clinical handover. We handle everything else. The first 72 hours
-              at home after a hospital stay are the hardest — not medically, but practically and
+              at home after a hospital stay are the hardest, not medically, but practically and
               emotionally. A Springer bridges that gap with calm, capable, unhurried presence.
             </p>
           </div>

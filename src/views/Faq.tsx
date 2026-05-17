@@ -18,7 +18,7 @@ const faqCategories = [
     items: [
       {
         q: "What is a Springer?",
-        a: "Springers are the companions on our registry: warm, curious people we introduce to your loved one after a careful personality match. They visit or call to share conversation, hobbies, and gentle routine — not as rotating agency staff, but as a consistent presence chosen to feel like a natural fit.",
+        a: "Springers are the companions on our registry: warm, curious people we introduce to your loved one after a careful personality match. They visit or call to share conversation, hobbies, and gentle routine, not as rotating agency staff, but as a consistent presence chosen to feel like a natural fit.",
       },
       {
         q: "How does Second Spring Companions work?",
@@ -26,7 +26,7 @@ const faqCategories = [
       },
       {
         q: "What do you mean by a personality match?",
-        a: "We look beyond availability to chemistry: values, humour, pace of conversation, and the small things that make someone easy to spend an afternoon with. Our Kindred Spirit discovery on the homepage is the starting point — tell us about your loved one and we will personally review every detail before we suggest a Springer.",
+        a: "We look beyond availability to chemistry: values, humour, pace of conversation, and the small things that make someone easy to spend an afternoon with. Our Kindred Spirit discovery on the homepage is the starting point, tell us about your loved one and we will personally review every detail before we suggest a Springer.",
       },
     ],
   },
@@ -43,7 +43,7 @@ const faqCategories = [
       },
       {
         q: "Where do you operate?",
-        a: "Our primary companionship hubs are Harpenden, St Albans, Redbourn, and London, where we coordinate most introductions day to day. We coordinate nationally from our London base and also offer a bespoke UK-wide search for families who want the same careful matching elsewhere — timelines and logistics are discussed openly at enquiry.",
+        a: "Our primary companionship hubs are Harpenden, St Albans, Redbourn, and London, where we coordinate most introductions day to day. We coordinate nationally from our London base and also offer a bespoke UK-wide search for families who want the same careful matching elsewhere, timelines and logistics are discussed openly at enquiry.",
       },
       {
         q: "Are your Springers insured?",
@@ -64,7 +64,7 @@ const faqCategories = [
     items: [
       {
         q: "How much does a Springer cost?",
-        a: "Standard Springer companionship visits typically begin from £26.80 per hour with a two-hour minimum (exact arrangements are agreed with your Springer). Rates reflect calibre and the bespoke nature of each placement and may vary by frequency and visit shape. Use the personality match form on our homepage and we will come back with a clear, tailored outline — no surprises.",
+        a: "Standard Springer companionship visits typically begin from £26.80 per hour with a two-hour minimum (exact arrangements are agreed with your Springer). Rates reflect calibre and the bespoke nature of each placement and may vary by frequency and visit shape. Use the personality match form on our homepage and we will come back with a clear, tailored outline, no surprises.",
       },
       {
         q: "Who employs the Springer?",
@@ -76,7 +76,7 @@ const faqCategories = [
       },
       {
         q: "How quickly can a Springer start?",
-        a: "For standard placements, we typically complete matching and introductions within one to two weeks of your initial conversation with us. If your situation is urgent — for example following a hospital discharge or sudden change in circumstances — contact us directly and we will do everything we can to move faster.",
+        a: "For standard placements, we typically complete matching and introductions within one to two weeks of your initial conversation with us. If your situation is urgent, for example following a hospital discharge or sudden change in circumstances, contact us directly and we will do everything we can to move faster.",
       },
       {
         q: "What does the introductory fee cover?",
@@ -93,7 +93,7 @@ const faqCategories = [
       },
       {
         q: "Does the Homecoming Service include medical or personal care?",
-        a: "No. Springers provide companionship, practical support and lifestyle assistance only. They do not administer medication, assist with bathing or dressing, or provide any CQC-regulated care. If clinical support is also needed, we are happy to signpost you to appropriate regulated providers — many families use both in parallel.",
+        a: "No. Springers provide companionship, practical support and lifestyle assistance only. They do not administer medication, assist with bathing or dressing, or provide any CQC-regulated care. If clinical support is also needed, we are happy to signpost you to appropriate regulated providers, many families use both in parallel.",
       },
       {
         q: "Can the Homecoming Service be arranged at short notice?",

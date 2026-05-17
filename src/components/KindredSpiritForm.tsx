@@ -10,7 +10,7 @@ import { Check, ArrowRight, ArrowLeft } from "lucide-react";
 // 1. Create a free form at https://formspree.io and copy your
 //    endpoint URL (looks like: https://formspree.io/f/abcdwxyz).
 // 2. Paste it below, replacing the placeholder string.
-// 3. That's it — submissions will be emailed to the address
+// 3. That's it, submissions will be emailed to the address
 //    associated with your Formspree account.
 // ============================================================
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mrerddvp";
@@ -227,7 +227,7 @@ const KindredSpiritForm = () => {
           <div>
             <h3 className="font-serif text-3xl mb-2">Contact Details</h3>
             <p className="text-muted-foreground text-sm">
-              We will respond personally — your details are never shared.
+              We will respond personally, your details are never shared.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

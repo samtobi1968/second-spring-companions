@@ -7,9 +7,9 @@ const OurSpringers = () => (
   <div className="min-h-screen bg-background">
     <SiteHeader />
 
-    {/* PHILOSOPHY — page introduction */}
-    <section className="border-b border-border/60 pb-16 pt-28 md:pb-20 md:pt-32 lg:pb-24 lg:pt-36">
-      <div className="container max-w-3xl">
+    {/* PHILOSOPHY - page introduction */}
+    <section className="py-28 md:py-36 bg-cream-deep">
+      <div className="container mx-auto max-w-4xl flex flex-col items-center">
         <div className="mb-8 flex items-center justify-center gap-3 md:mb-10">
           <div className="rule max-sm:hidden" />
           <span className="eyebrow text-center text-foreground/60">Our Springers · The Philosophy</span>
@@ -20,13 +20,13 @@ const OurSpringers = () => (
         </h1>
         <div className="mx-auto mt-10 max-w-2xl space-y-6 text-center text-lg leading-relaxed text-foreground/75 md:mt-12 md:text-xl">
           <p>
-            A Springer is not a carer, a cleaner or a visitor. They are a presence — chosen specifically
+            A Springer is not a carer, a cleaner or a visitor. They are a presence, chosen specifically
             because something about them will resonate with your loved one. We look for people with
             intellectual curiosity, warmth, patience and the rare ability to make an hour feel like ten
             minutes.
           </p>
           <p>
-            Our Springers come from a range of backgrounds — educators, creative professionals, people with
+            Our Springers come from a range of backgrounds, educators, creative professionals, people with
             decades of life experience who want to give something back. What unites them is not their CV but
             their character.
           </p>
@@ -51,7 +51,7 @@ const OurSpringers = () => (
             I have always been drawn to people with stories to tell. My clients have lived through things I
             can only read about. Every visit teaches me something.
           </p>
-          <p className="mt-6 text-sm text-foreground/50">— Springer, South London registry</p>
+          <p className="mt-6 text-sm text-foreground/50">Springer, South London registry</p>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 /**
- * Primary companionship hubs — map pins and marketing copy stay in sync from here.
+ * Primary companionship hubs, map pins and marketing copy stay in sync from here.
  */
 export const PRIMARY_SERVICE_HUBS = [
   { name: "Harpenden", position: [51.8168, -0.3574] as [number, number] },
