@@ -25,12 +25,12 @@ export default function OurLocationsMap() {
   );
 
   return (
-    <div className="locations-map-shell relative isolate z-0 h-full min-h-0 w-full overflow-hidden rounded-xl border border-border bg-muted/40 shadow-card">
+    <div className="locations-map-shell relative z-0 h-full min-h-0 w-full overflow-hidden rounded-xl border border-border bg-muted/40 shadow-card">
       <MapContainer
         bounds={LOCATIONS_BOUNDS}
         boundsOptions={{ padding: [44, 44], maxZoom: 11 }}
         scrollWheelZoom={false}
-        className="locations-leaflet-map locations-map-themed z-0 h-full min-h-0 w-full rounded-xl"
+        className="locations-leaflet-map locations-map-themed z-0 h-full min-h-[inherit] w-full rounded-xl"
         attributionControl
       >
         <TileLayer

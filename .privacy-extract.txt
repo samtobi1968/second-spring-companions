@@ -1,0 +1,199 @@
+﻿Second Spring Companions Limited
+Customer Privacy Notice
+Version 1.1  |  Last reviewed: 26 April 2026
+Non-CQC Regulated Social Companionship and Home Support Service
+This privacy notice tells you what to expect us to do with your personal information.
+Contact Details
+Email: info@secondspringcompanions.co.uk
+What Information We Collect, Use, and Why
+Providing non-regulated social companionship and home support services
+We collect or use the following personal information to provide our companionship and home support services:
+Name, address and contact details
+Date of birth
+Next of kin details including any support networks
+Emergency contact details
+Photographs (collected only with your explicit written consent ù see note below)
+Health information (including medical conditions, allergies and dietary requirements)
+Information about care needs (including disabilities, home conditions and general care provisions)
+Payment details (including card or bank information for transfers and direct debits)
+Records of meetings and decisions
+Records of consent, where appropriate
+Time-stamped geolocation data (arrival/departure logs) for service verification and safety
+Payment transaction metadata via third-party banking provider (Tide/Adyen)
+Note on photographs: Photographs are collected only with your explicit written consent and will not be shared with third parties without your further consent. You may withdraw this consent at any time by contacting us.
+We also collect the following special category information to provide our services. This information is subject to additional protection due to its sensitive nature:
+Racial or ethnic origin
+Religious or philosophical beliefs
+Health information
+Article 9 condition (UK GDPR): We process special category data on the basis of substantial public interest for social care purposes (Schedule 1, Part 2, paragraph 18 of the Data Protection Act 2018), and where necessary to protect your vital interests.
+Safeguarding and public protection
+We collect or use the following information for safeguarding or public protection reasons:
+Name, address and contact details
+Emergency contact details
+Health information (including medical conditions, allergies and medical history)
+Information about care needs (including disabilities, home conditions and dietary requirements)
+Special category data collected for this purpose: racial or ethnic origin; health information.
+Article 9 condition: Substantial public interest ù safeguarding of children and individuals at risk (Schedule 1, Part 2, paragraph 18, DPA 2018), and vital interests where there is an urgent risk to life.
+Prevention, detection, investigation or prosecution of crimes
+We collect or use the following personal information for crime prevention and detection purposes:
+Name, address and contact details
+Witness statements and contact details
+Relevant information from previous investigations
+Financial information (e.g. for fraud prevention or detection)
+Special category data collected for this purpose: racial or ethnic origin; religious or philosophical beliefs; health information.
+Article 9 condition: Substantial public interest ù prevention or detection of unlawful acts (Schedule 1, Part 2, paragraph 10, DPA 2018).
+Complying with legal requirements
+We collect or use the following personal information to comply with our legal obligations:
+Name and contact information
+Financial information
+Right to work documentation
+Tax information
+Safeguarding information
+Special category data collected for this purpose: health information.
+Article 9 condition: Legal obligation / substantial public interest (Schedule 1, Part 2, paragraph 6, DPA 2018).
+Recruitment purposes
+We collect or use the following personal information for recruitment of companions and staff:
+Contact details (name, address, telephone number or personal email address)
+Special category data collected for this purpose: racial or ethnic origin; religious or philosophical beliefs; health information.
+Article 9 condition: Explicit consent of the data subject, or substantial public interest for equality of opportunity monitoring (Schedule 1, Part 2, paragraph 8, DPA 2018).
+Dealing with queries, complaints or claims
+We collect or use the following personal information to handle queries, complaints and legal claims:
+Names and contact details
+Addresses
+Payment details
+Service history
+Witness statements and contact details
+Relevant information from previous investigations
+Information relating to health and safety (including incident investigation details and accident records)
+Correspondence
+Special category data collected for this purpose: racial or ethnic origin; health information.
+Article 9 condition: Legal claims / substantial public interest (Schedule 1, Part 2, paragraph 18, DPA 2018).
+Lawful Bases and Data Protection Rights
+Under UK data protection law, we must have a lawful basis for collecting and using your personal information. You can find out more about lawful bases on the ICO's website at ico.org.uk.
+Which lawful basis we rely on may affect your data protection rights, which are set out briefly below:
+Your right of access ù you have the right to ask us for copies of your personal information.
+Your right to rectification ù you have the right to ask us to correct or delete information you think is inaccurate or incomplete.
+Your right to erasure ù you have the right to ask us to delete your personal information.
+Your right to restriction of processing ù you have the right to ask us to limit how we use your information.
+Your right to object to processing ù you have the right to object to the processing of your personal data.
+Your right to data portability ù you have the right to ask us to transfer your information to another organisation or to you.
+Your right to withdraw consent ù where we rely on consent, you have the right to withdraw it at any time.
+If you make a request, we must respond to you without undue delay and in any event within one month.
+To make a data protection rights request, please contact us using the details at the top of this notice.
+Lawful bases for providing companionship and home support services
+Contract ù we need to collect or use the information to enter into or carry out our service agreement with you.
+Legitimate interests ù see box below.
+Vital interests ù where there is an urgent or serious risk to your physical or mental health or wellbeing.
+Our legitimate interests are: ensuring the safety and wellbeing of elderly clients during visits; maintaining accurate attendance and geolocation logs to verify that companions have arrived and departed safely; retaining health and care need information to match clients with suitable companions and to respond appropriately in an emergency; and processing next of kin details to enable prompt family communication where a clientÆs welfare is at risk.
+Lawful bases for safeguarding and public protection
+Legal obligation ù we must collect or use your information to comply with the law.
+Legitimate interests ù see box below.
+Vital interests ù where there is an urgent or serious risk to your physical or mental health or wellbeing.
+Our legitimate interests are: identifying and responding to signs of abuse, neglect, or exploitation of vulnerable elderly clients; sharing relevant welfare concerns with local authority safeguarding teams, social workers, or emergency services where a clientÆs safety is at serious risk; and maintaining records of safeguarding actions taken to demonstrate our duty of care.
+Lawful bases for prevention, detection and investigation of crime
+Legal obligation ù we must collect or use your information to comply with the law.
+Legitimate interests ù see box below.
+Our legitimate interests are: protecting our business and clients from financial fraud, including verifying payment transactions and detecting unusual billing activity; safeguarding our staff and clients from potential abuse or exploitation; and maintaining records of incidents or concerns to support any future police or regulatory investigation.
+Lawful bases for complying with legal requirements
+Legal obligation ù we must collect or use your information to comply with the law.
+Legitimate interests ù see box below.
+Our legitimate interests are: maintaining accurate financial and operational records to meet HMRC obligations and Companies Act requirements; retaining contractual records to defend or pursue legal claims within the Limitation Act timeframe; and demonstrating compliance with data protection law through documented policies and procedures.
+Lawful bases for recruitment
+Contract ù we need to collect or use the information to enter into or carry out an employment or contractor agreement.
+Legal obligation ù we must collect or use your information to comply with the law (e.g. right to work, DBS checks).
+Legitimate interests ù see box below.
+Our legitimate interests are: assessing the suitability of candidates to work with vulnerable elderly adults; verifying employment history and qualifications relevant to companionship and home support roles; and retaining records of recruitment decisions to respond to any employment or discrimination claims within the statutory limitation period.
+Lawful bases for dealing with queries, complaints and claims
+Contract ù we need the information to carry out or enforce our service agreement with you.
+Legal obligation ù we must collect or use your information to comply with the law.
+Legitimate interests ù see box below.
+Our legitimate interests are: investigating and resolving complaints about the quality or conduct of our services; maintaining correspondence records to provide continuity of care and accurate service history; and retaining evidence of decisions made in relation to client or family concerns to protect our business in the event of a legal claim.
+Where We Get Personal Information From
+Directly from you
+Family members or carers
+Companions who provide service verification logs, attendance records, and incident reports
+How Long We Keep Information
+We retain personal information only for as long as is necessary for the purposes set out in this notice, or as required by law. Our retention schedule is as follows:
+Category of Data
+Retention Period
+Why
+Financial Records (invoices, bank statements, tax receipts)
+6 years after financial year end
+Required for HMRC tax audits and Companies Act 2006
+Client Care Records (care plans, matching profiles, daily visit notes)
+6 years after service ends
+Matches the Limitation Act 1980 for contract or negligence claims
+Safeguarding Records (incident reports, welfare concerns)
+6 years from last contact
+Recommended for adult social care to ensure evidence is available for inquiries
+Recruitment Records (CVs and interview notes for unsuccessful candidates)
+6 months after decision
+Allows time for potential discrimination claims
+Employee Records (contracts, DBS check numbers, training logs)
+6 years after leaving employment
+Necessary for references, pension queries, and PAYE compliance
+Communication Logs (emails/messages with families and clients)
+3 years after query resolved
+Kept for service quality and history of care provided
+For more information on how long we store your personal information, or to request details about the criteria we use to determine retention periods, please contact us using the details above.
+Who We Share Information With
+Data processors
+We use the following organisations to process personal data on our behalf:
+Formspree: Formspree
+Catching and filtering website form submissions.
+Zapier: Zapier
+Automating the transfer of data between apps.
+Google Workspace: Google Workspace
+Secure cloud storage of care records and professional email communication.
+Tide Platform: Tide Platform
+Managing our business banking and generating invoices for services rendered.
+WhatsApp (Meta): WhatsApp (Meta)
+Encrypted, real-time operational communication between our staff and client families.
+Others we share personal information with
+Organisations we need to share information with for safeguarding reasons
+Emergency services
+Professional advisors (e.g. solicitors, accountants)
+Organisations we are legally obliged to share personal information with (e.g. HMRC, courts)
+Duty of confidentiality
+We are subject to a common law duty of confidentiality. However, there are circumstances where we will share relevant health and care information:
+Where you have provided us with your consent (implied for care provision, or explicit for other uses);
+Where we have a legal requirement (including court orders) to collect, share or use the data;
+Where, on a case-by-case basis, the public interest in sharing the data overrides the duty of confidentiality (for example, sharing information with the police to support the detection or prevention of serious crime);
+Where the requirements of The Health Service (Control of Patient Information) Regulations 2002 are satisfied.
+Data Breaches
+In the event of a personal data breach that is likely to result in a risk to your rights and freedoms, we will notify you without undue delay. Where required, we will also report the breach to the Information CommissionerÆs Office (ICO) within 72 hours of becoming aware of it. We maintain an internal record of all data breaches, including those that do not require notification.
+Automated Decision-Making and Profiling
+We do not carry out any automated decision-making or profiling that produces legal or similarly significant effects on you. All decisions relating to your care and service provision are made by our staff.
+Cookies and Our Website
+Our website (secondspringcompanions.co.uk) may use cookies or similar technologies. Where this is the case, we will provide a separate Cookie Notice on the website explaining what cookies we use, why we use them, and how you can manage your preferences. If you have questions about our website cookies, please contact us using the details above.
+Sharing Information Outside the UK
+Where necessary, our data processors may share personal information outside of the UK. When doing so, they comply with the UK GDPR, making sure appropriate safeguards are in place. The table below summarises these transfers:
+Organisation
+Category
+Country
+How transfer complies with UK law
+Formspree
+Website Form & Data Collection Processor
+United States
+UK Addendum to EU Standard Contractual Clauses (SCCs)
+Zapier
+Workflow Automation and Integration Platform
+United States
+Standard Contractual Clauses (SCCs) / UK IDTA ù please verify current DPF certification status at zapier.com/privacy
+WhatsApp (Meta)
+Encrypted Operational Communication Platform
+United States & other countries
+UK International Data Transfer Addendum (IDTA) to EU SCCs
+Google Workspace
+Cloud Storage and Email Provider
+United States
+Standard Contractual Clauses (SCCs) / UK IDTA
+For further information or to obtain a copy of the appropriate safeguard for any of the above transfers, please contact us using the contact details provided above.
+How to Complain
+If you have any concerns about our use of your personal data, please raise them with us first using the contact details at the top of this notice. We will respond promptly and take your concerns seriously.
+If you remain unhappy after raising a complaint with us, you can also complain to the ICO:
+Information CommissionerÆs Office
+Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF
+Helpline: 0303 123 1113
+Website: ico.org.uk/make-a-complaint
+Second Spring Companions Limited  |  Version 1.1  |  26 April 2026
