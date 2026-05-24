@@ -46,6 +46,9 @@ const SiteFooter = () => (
           <Link href="/privacy" className="text-xs text-cream/50 hover:text-cream transition-colors">
             Privacy
           </Link>
+          <Link href="/cookie-policy" className="text-xs text-cream/50 hover:text-cream transition-colors">
+            Cookie Policy
+          </Link>
         </div>
       </div>
     </div>
