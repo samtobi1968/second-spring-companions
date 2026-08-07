@@ -92,8 +92,8 @@ const OurSpringers = () => (
             },
             {
               icon: ShieldCheck,
-              t: "Public Liability Insurance",
-              c: "Every Springer operating through Second Spring holds public liability insurance before their first visit begins. Your family's peace of mind is built into our process, not an afterthought.",
+              t: "Independent Public Liability Insurance",
+              c: "Every Springer must hold their own independent public liability insurance before their first visit begins. Second Spring's policy covers our platform operations only and does not cover individual Springers. Confirming this cover is part of our process, not an afterthought.",
             },
           ].map((b) => (
             <div key={b.t} className="bg-primary p-10">

@@ -49,7 +49,7 @@ const Services = () => {
                   ))}
                 </div>
                 <p className="mt-6 text-sm text-foreground/50">
-                  Uniquely unhurried visits from £26.80 / hr · 2-hour minimum
+                  Uniquely unhurried visits · rates agreed directly
                 </p>
                 <ul className="mt-6 space-y-2.5 text-sm text-foreground/75">
                   {p.featureBullets.map((line) => (
@@ -113,7 +113,7 @@ const Services = () => {
                     "Calm company during the wait",
                     "Accompaniment home via pre-booked car",
                     "Settled in with a hot drink and meal",
-                    "Two to three hours of settling support",
+                    "Settling support for as long as needed",
                     "Family update message on arrival",
                   ],
                 },
@@ -123,7 +123,7 @@ const Services = () => {
                   t: "Settling In",
                   c: "Daily visits in the first week back, with meals, conversation, gentle errands, family updates and reassurance during the most fragile days of recovery.",
                   bullets: [
-                    "Daily 2-hour visits for the first seven days",
+                    "Daily visits for the first seven days",
                     "Hot meal preparation and shared mealtimes",
                     "Encouragement of fluids and light nutrition",
                     "Light tidying laundry and errands",

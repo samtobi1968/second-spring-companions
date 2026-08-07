@@ -126,16 +126,19 @@ const SiteHeader = () => {
         </div>
 
         <button
-          className={`lg:hidden p-2 ${transparent ? "text-cream" : "text-foreground"}`}
+          type="button"
+          className={`lg:hidden -mr-2 flex min-h-11 min-w-11 items-center justify-center rounded-md touch-manipulation ${transparent ? "text-cream" : "text-foreground"}`}
           onClick={() => setOpen((o) => !o)}
           aria-label="Menu"
+          aria-expanded={open}
+          aria-controls="mobile-nav"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {open && (
-        <div className="lg:hidden bg-background border-t border-border animate-fade-in">
+        <div id="mobile-nav" className="lg:hidden bg-background border-t border-border animate-fade-in shadow-soft">
           <div className="container py-6 flex flex-col gap-2">
             {nav.map((n) =>
               n.children ? (

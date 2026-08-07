@@ -2,7 +2,7 @@ import { Check, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const features = [
-  "2-hour minimum visit",
+  "Flexible visit lengths, agreed with you",
   "Enhanced DBS vetting",
   "Bespoke personality matching",
   "Consistent connection (no rotating staff)",
@@ -16,10 +16,9 @@ const PricingCard = () => (
       <span className="eyebrow text-foreground/55">Pricing & Investment</span>
     </div>
     <h3 className="font-serif text-3xl md:text-4xl mb-2">Standard Springer Visit</h3>
-    <div className="flex items-baseline gap-2 mb-8 pb-8 border-b border-border">
-      <span className="font-serif text-5xl text-primary sm:text-6xl tracking-tight">£26.80</span>
-      <span className="text-muted-foreground">per hour</span>
-    </div>
+    <p className="font-serif text-3xl text-primary sm:text-4xl tracking-tight mb-8 pb-8 border-b border-border">
+      Rates agreed directly between client and Springer
+    </p>
     <ul className="space-y-4 mb-10">
       {features.map((f) => (
         <li key={f} className="flex items-start gap-3 text-foreground/80">
@@ -32,8 +31,8 @@ const PricingCard = () => (
       <a href="/#kindred-spirit">Start Your Personality Match</a>
     </Button>
     <p className="text-sm text-foreground/50 text-center mt-6">
-      We believe genuine connection cannot be rushed. Our two-hour minimum ensures every visit is
-      relaxed, meaningful, and entirely tailored to you.
+      We believe genuine connection cannot be rushed. Every visit is relaxed, meaningful, and
+      entirely tailored to you.
     </p>
   </div>
 );

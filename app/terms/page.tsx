@@ -75,8 +75,8 @@ export default function TermsPage() {
           <section className="mb-12 md:mb-14">
             <h2 className="font-serif text-2xl md:text-3xl mb-4">3. Safety Boundaries (Strictly Prohibited Actions)</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              To protect our legal status, our insurance, and Client safety, Springers must not
-              provide:
+              To protect our legal status, Second Spring&apos;s own operational insurance, and Client
+              safety, Springers must not provide:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-foreground/80 leading-relaxed">
               <li><strong>Personal Care:</strong> No assistance with bathing, toileting, dressing, or hygiene.</li>
@@ -95,7 +95,7 @@ export default function TermsPage() {
             <h2 className="font-serif text-2xl md:text-3xl mb-4">4. Fees, Billing & Cancellations</h2>
             <ul className="list-disc pl-6 space-y-2 text-foreground/80 leading-relaxed">
               <li><strong>Initial Consultation:</strong> The introductory consultation is provided free of charge with no obligation.</li>
-              <li><strong>Hourly Rate:</strong> Companion visits are charged at GBP 26.80 per hour, subject to a minimum visit length agreed at the point of booking.</li>
+              <li><strong>Visit Rates:</strong> Companion visit rates and visit lengths are agreed directly between the Client and the self-employed Springer at the point of booking.</li>
               <li><strong>Bespoke Plans:</strong> Tailored multi-visit weekly schedules are quoted on a bespoke basis.</li>
               <li><strong>Payments:</strong> Payments must be made via bank transfer to our business account as per the invoice instructions.</li>
               <li><strong>Cancellations:</strong> Visits cancelled with less than 24 hours&apos; notice will be charged at the full rate of the scheduled visit.</li>
@@ -118,8 +118,11 @@ export default function TermsPage() {
           <section className="mb-12 md:mb-14">
             <h2 className="font-serif text-2xl md:text-3xl mb-4">6. Insurance & Driving</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>General:</strong> Springers are covered by Public Liability insurance for
-              social companionship activities within the home.
+              <strong>General:</strong> Second Spring&apos;s insurance covers the Company&apos;s
+              platform and introductory operations only. It does not cover individual Springers.
+              Springers are self employed and must maintain their own independent public liability
+              insurance for companionship activities. Second Spring may require evidence of such
+              cover before introductions proceed.
             </p>
             <p className="text-foreground/80 leading-relaxed">
               <strong>Driving:</strong> If a Springer drives a Client, they do so as an independent

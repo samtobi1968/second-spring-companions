@@ -142,7 +142,7 @@ const BecomeASpringer = () => {
                 "Springers are self-employed independent contractors.",
                 "Springer rates are competitive and discussed at your introductory call. We are transparent about pay from the very first conversation.",
                 "You invoice us for the hours you complete.",
-                "Suggested starting commitment: 2â€“5 hours per week (flexible to grow).",
+                "Suggested starting commitment: 2-5 hours per week (flexible to grow).",
                 "You set your availability, mornings, afternoons, weekends. We always share the client's preferred timings, and if you accept, it's up to you.",
                 "No zero-hours contracts, no pressure, just flexibility that works for you.",
               ].map((line) => (
@@ -162,8 +162,8 @@ const BecomeASpringer = () => {
               </div>
               <div className="space-y-5">
                 {[
-                  { t: "2 visits a week", s: "1â€“2 hours each" },
-                  { t: "Saturday mornings only", s: "2â€“3 hours per visit" },
+                  { t: "2 visits a week", s: "1-2 hours each" },
+                  { t: "Saturday mornings only", s: "2-3 hours per visit" },
                   { t: "Weekday afternoons", s: "3 hours, twice a week" },
                   { t: "One longer weekly visit", s: "4 hours every Friday" },
                 ].map((p) => (
@@ -247,7 +247,7 @@ const BecomeASpringer = () => {
               },
               {
                 q: "What insurance do I need?",
-                a: "As a self-employed Springer you are responsible for your own public liability insurance before visits begin. This is standard for self-employed companion roles and relatively low cost. We can point you toward suitable providers at onboarding.",
+                a: "As a self employed Springer you are responsible for your own public liability insurance before visits begin. Second Spring's insurance does not cover individual Springers; it applies only to the Company's platform and introductory operations. Your own cover is standard for self employed companion roles and relatively low cost. We can point you toward suitable providers at onboarding.",
               },
             ].map((item, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-border last:border-0">

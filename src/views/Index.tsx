@@ -316,7 +316,7 @@ const Index = () => {
                 meta: "Ongoing",
                 title: "Regular Visits Begin",
                 copy: "Scheduled visits start at a pace that suits your loved one building familiarity, friendship and routine over time.",
-                price: "From £26.80 / hour",
+                price: "Rates agreed directly",
               },
             ].map((s) => (
               <div key={s.title} className="bg-background p-10 md:p-14 grid md:grid-cols-12 gap-8 items-start">

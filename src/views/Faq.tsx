@@ -47,7 +47,7 @@ const faqCategories = [
       },
       {
         q: "Are your Springers insured?",
-        a: "Yes. Every Springer operating through Second Spring Companions holds public liability insurance before any visits begin. This sits alongside their enhanced DBS check and verified references as part of our standard vetting process.",
+        a: "Springers are self employed and are required to hold their own independent public liability insurance before any visits begin. Second Spring's insurance covers our platform and introductory operations only; it does not cover individual Springers. Evidence of a Springer's own cover sits alongside their enhanced DBS check and verified references as part of our standard vetting process.",
       },
       {
         q: "What happens if the match does not feel right?",
@@ -64,7 +64,7 @@ const faqCategories = [
     items: [
       {
         q: "How much does a Springer cost?",
-        a: "Standard Springer companionship visits typically begin from £26.80 per hour with a two-hour minimum (exact arrangements are agreed with your Springer). Rates reflect calibre and the bespoke nature of each placement and may vary by frequency and visit shape. Use the personality match form on our homepage and we will come back with a clear, tailored outline, no surprises.",
+        a: "Springer visit rates and visit lengths are agreed directly between you and your Springer. Rates reflect calibre and the bespoke nature of each placement and may vary by frequency and visit shape. Use the personality match form on our homepage and we will come back with a clear, tailored outline, no surprises.",
       },
       {
         q: "Who employs the Springer?",
