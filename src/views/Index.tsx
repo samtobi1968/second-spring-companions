@@ -106,17 +106,14 @@ const Index = () => {
                 Our core visits run across Harpenden, St Albans, Redbourn, and London, with the same careful onboarding and
                 personality-led matching wherever you need us.
               </p>
-              <Button asChild variant="outlineLuxe" size="lg" className="mt-8">
-                <Link href="/our-locations">View locations map</Link>
-              </Button>
             </div>
             <ul className="flex flex-wrap gap-3 lg:max-w-md lg:justify-end">
               {PRIMARY_SERVICE_HUBS.map((hub) => (
                 <li
-                  key={hub.name}
+                  key={hub}
                   className="rounded-full border border-border bg-background px-5 py-2.5 text-center font-semibold text-foreground shadow-soft"
                 >
-                  {hub.name}
+                  {hub}
                 </li>
               ))}
             </ul>

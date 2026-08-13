@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import SpringersDoDontSection from "@/components/our-springers/SpringersDoDontSection";
 import { Button } from "@/components/ui/button";
 import { MessagesSquare, ShieldCheck, UserCheck, ArrowRight } from "lucide-react";
 
@@ -37,6 +38,8 @@ const OurSpringers = () => (
         </div>
       </div>
     </section>
+
+    <SpringersDoDontSection />
 
     {/* PLACEHOLDER PROFILE */}
     <section className="bg-cream-deep py-20">

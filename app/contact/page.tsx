@@ -49,7 +49,7 @@ export default function ContactPage() {
               <a href="mailto:info@secondspringcompanions.co.uk">Send an email</a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/our-locations">Our locations</Link>
+              <Link href="/how-it-works">How it works</Link>
             </Button>
           </div>
         </div>

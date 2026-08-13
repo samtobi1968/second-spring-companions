@@ -122,54 +122,6 @@
   }
 }
 
-/* Leaflet, Our Locations (react-leaflet), premium concierge styling */
-.locations-marker-wrap {
-  background: transparent !important;
-  border: none !important;
-}
-
-.locations-marker-pin {
-  width: 13px;
-  height: 13px;
-  margin: 7px;
-  border-radius: 9999px;
-  background: hsl(var(--primary));
-  border: 2px solid hsl(var(--cream));
-  box-shadow: 0 2px 14px hsl(var(--primary) / 0.38);
-}
-
-/* Warm, slightly desaturated Carto Voyager, tiles only */
-.locations-map-themed.leaflet-container .leaflet-tile-pane {
-  filter: saturate(0.88) sepia(0.09) hue-rotate(-8deg) brightness(1.03) contrast(0.98);
-}
-
-.locations-leaflet-map .leaflet-control-attribution {
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 10px;
-  line-height: 1.35;
-  color: hsl(var(--muted-foreground));
-  background: hsl(var(--card) / 0.92);
-  backdrop-filter: blur(6px);
-  border-radius: 8px 0 12px 0;
-}
-
-.locations-leaflet-map .leaflet-tooltip.locations-tooltip {
-  font-family: Inter, system-ui, sans-serif !important;
-  font-size: 0.8125rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.02em !important;
-  padding: 0.5rem 0.75rem !important;
-  border-radius: 8px !important;
-  background: hsl(var(--card)) !important;
-  color: hsl(var(--foreground)) !important;
-  border: 1px solid hsl(var(--border)) !important;
-  box-shadow: var(--shadow-soft) !important;
-}
-
-.locations-leaflet-map .leaflet-tooltip.locations-tooltip.leaflet-tooltip-top::before {
-  border-top-color: hsl(var(--card)) !important;
-}
-
 /* Kindred Spirit / Tally: React inline styles cannot use !important; this matches requested iframe rules. */
 #kindred-spirit iframe.kindred-tally-iframe {
   margin: 0 auto !important;
