@@ -9,6 +9,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 type NavItem = { to: string; label: string; children?: { to: string; label: string }[] };
 
 const nav: NavItem[] = [
+  { to: "/how-it-works", label: "How It Works" },
   { to: "/services", label: "Our Services" },
   { to: "/why-companionship", label: "Why Companionship?" },
   { to: "/our-springers", label: "Our Springers" },
