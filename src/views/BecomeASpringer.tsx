@@ -235,7 +235,7 @@ const BecomeASpringer = () => {
               },
               {
                 q: "Do I need my own DBS check?",
-                a: "If you already hold a valid enhanced DBS certificate, great. If not, we will guide you through obtaining one before your first visit. We do not arrange DBS checks on your behalf but we will point you in the right direction.",
+                a: "If you already hold a valid Basic DBS certificate, great. If not, we will guide you through obtaining one before your first visit. We do not arrange DBS checks on your behalf but we will point you in the right direction.",
               },
               {
                 q: "Can I do this alongside another job or my studies?",

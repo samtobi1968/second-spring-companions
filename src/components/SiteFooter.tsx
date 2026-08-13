@@ -39,7 +39,7 @@ const SiteFooter = () => (
         <div className="flex gap-4 items-center">
           <span>ICO Registered</span>
           <span>GDPR Compliant</span>
-          <span>Enhanced DBS</span>
+          <span>Basic DBS</span>
           <Link href="/terms" className="text-xs text-cream/50 hover:text-cream transition-colors">
             Terms
           </Link>

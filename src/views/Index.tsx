@@ -62,7 +62,7 @@ const Index = () => {
               {[
                 "Founder-Led Onboarding",
                 "ICO Registered, GDPR Compliant",
-                "DBS-Checked Springers",
+                "Basic DBS Cleared Springers",
                 "Bespoke National Search",
               ].map((item) => (
                 <div key={item} className="rounded-full border border-cream/30 px-4 py-2 text-center">

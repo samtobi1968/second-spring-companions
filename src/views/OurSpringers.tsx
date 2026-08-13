@@ -72,7 +72,7 @@ const OurSpringers = () => (
           </h2>
           <p className="text-lg leading-relaxed text-cream/80">
             We select them based on conversational skills, interests and emotional intelligence. Every Springer
-            undergoes an enhanced DBS check and rigorous face-to-face interviews before any visits.
+            undergoes a Basic DBS check and rigorous face-to-face interviews before any visits.
           </p>
         </div>
 
@@ -85,8 +85,8 @@ const OurSpringers = () => (
             },
             {
               icon: ShieldCheck,
-              t: "Enhanced DBS Check",
-              c: "Every Springer holds a current enhanced DBS certificate and provides two professional references which we verify directly.",
+              t: "Basic DBS Check",
+              c: "Every Springer holds a current Basic DBS certificate and provides two professional references which we verify directly.",
             },
             {
               icon: UserCheck,

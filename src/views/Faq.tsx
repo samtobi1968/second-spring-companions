@@ -35,7 +35,7 @@ const faqCategories = [
     items: [
       {
         q: "How are Springers vetted?",
-        a: "Every Springer on our registry completes an enhanced DBS check, verified references, and a face-to-face interview with our founders. We only introduce people we would trust with our own families.",
+        a: "Every Springer on our registry completes a Basic DBS check, verified references, and a face-to-face interview with our founders. We only introduce people we would trust with our own families.",
       },
       {
         q: "Are you regulated by the CQC?",
@@ -47,7 +47,7 @@ const faqCategories = [
       },
       {
         q: "Are your Springers insured?",
-        a: "Springers are self employed and are required to hold their own independent public liability insurance before any visits begin. Second Spring's insurance covers our platform and introductory operations only; it does not cover individual Springers. Evidence of a Springer's own cover sits alongside their enhanced DBS check and verified references as part of our standard vetting process.",
+        a: "Springers are self employed and are required to hold their own independent public liability insurance before any visits begin. Second Spring's insurance covers our platform and introductory operations only; it does not cover individual Springers. Evidence of a Springer's own cover sits alongside their Basic DBS check and verified references as part of our standard vetting process.",
       },
       {
         q: "What happens if the match does not feel right?",

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   "Flexible visit lengths, agreed with you",
-  "Enhanced DBS vetting",
+  "Basic DBS check",
   "Bespoke personality matching",
   "Consistent connection (no rotating staff)",
   "No rotations. Your Springer, every time",

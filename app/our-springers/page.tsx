@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/buildPageMetadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Our Springers | Second Spring Companions",
   description:
-    "Meet our Springers: DBS-checked companions chosen through founder interviews. Intellectual companionship and genuine connection for older adults.",
+    "Meet our Springers: Basic DBS cleared companions chosen through founder interviews. Intellectual companionship and genuine connection for older adults.",
   path: "/our-springers",
 });
 
