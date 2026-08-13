@@ -221,62 +221,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="homecoming-preview" className="py-28 md:py-36 bg-cream-deep">
-        <div className="container grid lg:grid-cols-2 gap-16 items-center">
-          <div className="flex flex-col">
-            <Eyebrow>When It Matters Most</Eyebrow>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight mt-2">The Homecoming Service</h2>
-            <p className="mt-6 text-lg text-foreground/75 leading-relaxed">
-              The first 72 hours following a hospital stay are often the hardest, not just medically, but practically and
-              emotionally. A Springer transforms the transition by preparing the home before discharge, accompanying your
-              loved one from the ward, and providing daily visits throughout the first week to provide meals, company and
-              family updates.
-            </p>
-            <p className="mt-4 text-foreground/60 leading-relaxed">
-              Designed for families navigating a sudden discharge. Arranged at short notice. No clinical care, just a calm,
-              capable, and human presence exactly when it is needed most.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" variant="luxe">
-                <Link href="/services#homecoming">
-                  Learn About Homecoming <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="ghostLuxe">
-                <a href="/#kindred-spirit">
-                  Arrange a Private Consultation <ArrowRight size={16} className="ml-2" />
-                </a>
-              </Button>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-px bg-border border border-border">
-            {[
-              {
-                title: "The Warm Welcome",
-                copy: "Airing rooms, stocking the fridge, and ensuring the home is warm and ready for arrival.",
-              },
-              {
-                title: "Seamless Transition",
-                copy: "A Springer is with you during discharge and transport from ward to front door.",
-              },
-              {
-                title: "The Recovery Shield",
-                copy: "Daily visits during the first week to manage prescriptions, errands, and meal preparation.",
-              },
-              {
-                title: "Restoring Rhythm",
-                copy: "High-level companionship focused on rebuilding confidence and independence.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="bg-background p-7 md:p-8 flex flex-col gap-2.5">
-                <span className="font-serif text-lg md:text-xl text-sage-deep leading-tight">{item.title}</span>
-                <span className="text-xs md:text-sm text-foreground/65 leading-relaxed">{item.copy}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* THE SECOND SPRING STANDARD */}
       <section id="standard" className="py-28 md:py-36">
         <div className="container">

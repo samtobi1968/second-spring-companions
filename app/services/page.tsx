@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/buildPageMetadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Our Services | Second Spring Companions",
   description:
-    "Springer companionship in four pillars: connection, hobbies, everyday support, and help with tech. Homecoming service and transparent introductory agency model.",
+    "Springer companionship in four pillars: connection, hobbies, everyday support, and help with tech. Transparent introductory agency model.",
   path: "/services",
 });
 

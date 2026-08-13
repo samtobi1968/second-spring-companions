@@ -9,14 +9,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 type NavItem = { to: string; label: string; children?: { to: string; label: string }[] };
 
 const nav: NavItem[] = [
-  {
-    to: "/services",
-    label: "Our Services",
-    children: [
-      { to: "/services#pillars", label: "Springer Companionship" },
-      { to: "/services#homecoming", label: "The Homecoming Service" },
-    ],
-  },
+  { to: "/services", label: "Our Services" },
   { to: "/why-companionship", label: "Why Companionship?" },
   { to: "/our-springers", label: "Our Springers" },
   { to: "/faq", label: "FAQ" },

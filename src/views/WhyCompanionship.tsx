@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
@@ -128,16 +127,6 @@ const WhyCompanionship = () => (
           })}
         </div>
 
-        <p className="mt-12 text-sm text-foreground/60 leading-relaxed max-w-2xl mx-auto text-center">
-          The need for companionship is often greatest in the days immediately following a hospital
-          stay. Our Homecoming Service was designed specifically for this moment.{" "}
-          <Link
-            href="/services#homecoming"
-            className="text-sage-deep underline-offset-4 underline font-medium"
-          >
-            Learn about the Homecoming Service →
-          </Link>
-        </p>
       </div>
     </section>
 

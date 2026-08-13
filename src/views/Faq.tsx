@@ -84,23 +84,6 @@ const faqCategories = [
       },
     ],
   },
-  {
-    title: "The Homecoming Service",
-    items: [
-      {
-        q: "What is the Homecoming Service?",
-        a: "The Homecoming Service is a dedicated offering for the days surrounding a hospital discharge. A Springer prepares the home before your loved one arrives back, accompanies them from the ward to their front door, and visits daily in the first week to provide meals, company, errands and family updates. It is designed to fill the practical and emotional gap that the NHS cannot.",
-      },
-      {
-        q: "Does the Homecoming Service include medical or personal care?",
-        a: "No. Springers provide companionship, practical support and lifestyle assistance only. They do not administer medication, assist with bathing or dressing, or provide any CQC-regulated care. If clinical support is also needed, we are happy to signpost you to appropriate regulated providers, many families use both in parallel.",
-      },
-      {
-        q: "Can the Homecoming Service be arranged at short notice?",
-        a: "Yes, in many cases. Hospital discharges are often sudden and we understand families do not always have time to plan ahead. Contact us directly for urgent Homecoming requests and we will prioritise your enquiry.",
-      },
-    ],
-  },
 ] as const;
 
 const Faq = () => {
